@@ -1,18 +1,19 @@
-﻿Build started 9/11/2014 4:31:12 PM.
+﻿Build started 9/11/2014 4:46:25 PM.
      1>Project "C:\Users\AW 18\Dropbox\GuildHall\Projects\NetworkingMidterm\MidtermServer\MidtermServer.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
-         Touching "Debug\MidtermServer.unsuccessfulbuild".
+         Creating "Debug\MidtermServer.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ServerCode\UDPServer.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ServerCode\ConnectedUDPClient.cpp ServerCode\UDPServer.cpp
          UDPServer.cpp
      1>c:\users\aw 18\dropbox\guildhall\projects\networkingmidterm\midtermserver\servercode\udpserver.cpp(36): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
      1>c:\users\aw 18\dropbox\guildhall\projects\networkingmidterm\midtermserver\servercode\udpserver.cpp(152): warning C4996: 'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _itoa. See online help for details.
                  c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdlib.h(867) : see declaration of 'itoa'
-     1>c:\users\aw 18\dropbox\guildhall\projects\networkingmidterm\midtermserver\servercode\udpserver.cpp(416): warning C4018: '<' : signed/unsigned mismatch
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt ..\CBEngine\EngineCode\stb_image.c
-         stb_image.c
+     1>c:\users\aw 18\dropbox\guildhall\projects\networkingmidterm\midtermserver\servercode\udpserver.cpp(417): warning C4018: '<' : signed/unsigned mismatch
+         ConnectedUDPClient.cpp
+         Generating Code...
+         All outputs are up-to-date.
        ManifestResourceCompile:
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\MidtermServer.exe.embed.manifest.res" Debug\MidtermServer_manifest.rc 
+         All outputs are up-to-date.
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\AW 18\Dropbox\GuildHall\Projects\NetworkingMidterm\MidtermServer\\MidtermServer.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\MidtermServer.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\AW 18\Dropbox\GuildHall\Projects\NetworkingMidterm\MidtermServer\MidtermServer.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\AW 18\Dropbox\GuildHall\Projects\NetworkingMidterm\MidtermServer\\MidtermServer.lib" /MACHINE:X86 Debug\MidtermServer.exe.embed.manifest.res
          Debug\AABB3D.obj
@@ -111,103 +112,9 @@
          Debug\UDPServer.obj
        Manifest:
          C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\MidtermServer.exe.embed.manifest" /manifest Debug\MidtermServer.exe.intermediate.manifest
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\MidtermServer.exe.embed.manifest.res" Debug\MidtermServer_manifest.rc 
+         All outputs are up-to-date.
        LinkEmbedManifest:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\AW 18\Dropbox\GuildHall\Projects\NetworkingMidterm\MidtermServer\\MidtermServer.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\MidtermServer.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\AW 18\Dropbox\GuildHall\Projects\NetworkingMidterm\MidtermServer\MidtermServer.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\AW 18\Dropbox\GuildHall\Projects\NetworkingMidterm\MidtermServer\\MidtermServer.lib" /MACHINE:X86 Debug\MidtermServer.exe.embed.manifest.res
-         Debug\AABB3D.obj
-         Debug\Alarm.obj
-         Debug\AsyncJob.obj
-         Debug\BitmapFont.obj
-         Debug\CB3DSMaxImporter.obj
-         Debug\CBMemoryManager.obj
-         Debug\CBMesh.obj
-         Debug\CBNode.obj
-         Debug\CBRenderer.obj
-         Debug\CBSkinnedMesh.obj
-         Debug\CBSkinnedTriangleBatch.obj
-         Debug\CBStringHelper.obj
-         Debug\CBTriangleBatch.obj
-         Debug\Clock.obj
-         Debug\CollisionHelper.obj
-         Debug\CommandLet.obj
-         Debug\CommandLineArgs.obj
-         Debug\CommandPrompt.obj
-         Debug\Console.obj
-         Debug\ConsoleCommandArg.obj
-         Debug\DebugAABB.obj
-         Debug\DebugArrow.obj
-         Debug\DebugLine.obj
-         Debug\DebugPoint.obj
-         Debug\DebugShapeDefinition.obj
-         Debug\DebugShapeRenderer.obj
-         Debug\DebugSphere.obj
-         Debug\Disk2D.obj
-         Debug\EngineErrorManager.obj
-         Debug\EngineProfiler.obj
-         Debug\EngineSettings.obj
-         Debug\Entity.obj
-         Debug\EntityMesh.obj
-         Debug\EventSubscriberBase.obj
-         Debug\EventSystem.obj
-         Debug\EventSystemSubscriber.obj
-         Debug\FMODSound.obj
-         Debug\Fog.obj
-         Debug\FontManager.obj
-         Debug\FrameBufferObject.obj
-         Debug\GameDirector.obj
-         Debug\Geometry3D.obj
-         Debug\Glyph.obj
-         Debug\guicon.obj
-         Debug\HashBufferJob.obj
-         Debug\InputHandler.obj
-         Debug\JobManager.obj
-         Debug\Light.obj
-         Debug\LoadFileJob.obj
-         Debug\Material.obj
-         Debug\Matrix44.obj
-         Debug\MatrixStack.obj
-         Debug\MemoryMacros.obj
-         Debug\NamedProperties.obj
-         Debug\NamedProperty.obj
-         Debug\Node.obj
-         Debug\OpenGLRenderer.obj
-         Debug\OpenGLShader.obj
-         Debug\OpenGLShaderError.obj
-         Debug\OpenGLShaderManager.obj
-         Debug\OpenGLShaderProgram.obj
-         Debug\OperatorNewDelete.obj
-         Debug\Particle.obj
-         Debug\Plane3D.obj
-         Debug\ProfileSection.obj
-         Debug\pugixml.obj
-         Debug\ReverseBufferJob.obj
-         Debug\SaveFileJob.obj
-         Debug\Size.obj
-         Debug\Sphere3D.obj
-         Debug\SphereShape.obj
-         Debug\Sprite.obj
-         Debug\SpriteAnimation.obj
-         Debug\SpriteAnimationDefinition.obj
-         Debug\stb_image.obj
-         Debug\TextRenderer.obj
-         Debug\Texture.obj
-         Debug\TextureAtlas.obj
-         Debug\TextureAtlasManager.obj
-         Debug\TextureManager.obj
-         Debug\TimeSystem.obj
-         Debug\TimeUtil.obj
-         Debug\TypedEventSubscriber.obj
-         Debug\TypedNamedProperty.obj
-         Debug\Vector2.obj
-         Debug\ViewFrustum.obj
-         Debug\WorkerThread.obj
-         Debug\XBOXController.obj
-         Debug\XMLDocument.obj
-         Debug\XMLNode.obj
-         Debug\XMLParser.obj
-         Debug\ConnectedUDPClient.obj
-         Debug\main.obj
-         Debug\UDPServer.obj
+         All outputs are up-to-date.
          MidtermServer.vcxproj -> C:\Users\AW 18\Dropbox\GuildHall\Projects\NetworkingMidterm\MidtermServer\\MidtermServer.exe
        FinalizeBuildStatus:
          Deleting file "Debug\MidtermServer.unsuccessfulbuild".
@@ -216,4 +123,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:03.22
+Time Elapsed 00:00:02.52

@@ -1,4 +1,4 @@
-﻿Build started 9/11/2014 4:43:18 PM.
+﻿Build started 9/11/2014 4:49:08 PM.
      1>Project "C:\Users\AW 18\Dropbox\GuildHall\Projects\NetworkingMidterm\MidtermClient\MidtermClient.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Debug\MidtermClient.unsuccessfulbuild" because "AlwaysCreate" was specified.
@@ -7,9 +7,9 @@
          FeedbackWorld.cpp
      1>c:\users\aw 18\dropbox\guildhall\projects\networkingmidterm\midtermclient\gamecode\feedbackworld.cpp(62): warning C4018: '<' : signed/unsigned mismatch
      1>c:\users\aw 18\dropbox\guildhall\projects\networkingmidterm\midtermclient\gamecode\feedbackworld.cpp(105): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\aw 18\dropbox\guildhall\projects\networkingmidterm\midtermclient\gamecode\feedbackworld.cpp(188): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\aw 18\dropbox\guildhall\projects\networkingmidterm\midtermclient\gamecode\feedbackworld.cpp(269): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\aw 18\dropbox\guildhall\projects\networkingmidterm\midtermclient\gamecode\feedbackworld.cpp(322): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\aw 18\dropbox\guildhall\projects\networkingmidterm\midtermclient\gamecode\feedbackworld.cpp(190): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\aw 18\dropbox\guildhall\projects\networkingmidterm\midtermclient\gamecode\feedbackworld.cpp(272): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\aw 18\dropbox\guildhall\projects\networkingmidterm\midtermclient\gamecode\feedbackworld.cpp(325): warning C4018: '<' : signed/unsigned mismatch
          All outputs are up-to-date.
        ManifestResourceCompile:
          All outputs are up-to-date.
@@ -126,4 +126,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.70
+Time Elapsed 00:00:01.74

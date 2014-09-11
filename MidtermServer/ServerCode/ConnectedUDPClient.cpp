@@ -81,7 +81,8 @@ void ConnectedUDPClient::assignColorForPlayer() {
 
 	} 
 
-	m_startingPos = m_position;
+	m_startingPos.x = m_position.x;
+	m_startingPos.y = m_position.y;
 }
 
 

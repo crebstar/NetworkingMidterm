@@ -153,6 +153,8 @@ void FeedbackWorld::collectPacketDataFromServer( float deltaSeconds ) {
 
 							gamePlayerRecPacket->m_position.x = packetRec.data.reset.m_playerXPos;
 							gamePlayerRecPacket->m_position.y = packetRec.data.reset.m_playerYPos;
+							gamePlayerRecPacket->m_desiredPosition.x = packetRec.data.reset.m_playerXPos;
+							gamePlayerRecPacket->m_desiredPosition.y = packetRec.data.reset.m_playerYPos;
 
 							if ( gamePlayerRecPacket->m_playerID == packetRec.data.reset.m_playerIDWhoIsIt ) {
 
@@ -238,7 +240,8 @@ void FeedbackWorld::attemptToConnectToServer( float deltaSeconds ) {
 
 				m_player.m_position.x = connectionResetPacket.data.reset.m_playerXPos;
 				m_player.m_position.y = connectionResetPacket.data.reset.m_playerYPos;
-				m_player.m_desiredPosition = m_player.m_desiredPosition;
+				m_player.m_desiredPosition.x = connectionResetPacket.data.reset.m_playerXPos;
+				m_player.m_desiredPosition.y = connectionResetPacket.data.reset.m_playerYPos;
 				m_player.m_orientationDegrees = 0.0f;
 				m_player.m_playerColor.x = cbengine::rangeMapFloat( 0.0f, 255.0f, 0.0f, 1.0f, connectionResetPacket.data.reset.m_red );
 				m_player.m_playerColor.y = cbengine::rangeMapFloat( 0.0f, 255.0f, 0.0f, 1.0f, connectionResetPacket.data.reset.m_green );

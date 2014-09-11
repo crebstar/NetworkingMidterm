@@ -246,8 +246,8 @@ void UDPServer::updateOrCreateNewClient( const std::string& combinedIPAndPort, c
 
 			resetPacket.data.reset.m_playerIDWhoIsIt = idOfPlayerWhoIsIt;
 
-			resetPacket.data.reset.m_playerXPos = client->m_position.x;
-			resetPacket.data.reset.m_playerYPos = client->m_position.y;
+			resetPacket.data.reset.m_playerXPos = client->m_startingPos.x;
+			resetPacket.data.reset.m_playerYPos = client->m_startingPos.y;
 			// Note: client is expected to clear velocity
 
 			client->m_reliablePacketsSentButNotAcked.insert( std::pair<int,MidtermPacket>( resetPacket.m_packetNumber, resetPacket ) );
