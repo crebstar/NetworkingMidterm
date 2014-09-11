@@ -55,6 +55,10 @@ struct MidtermPacket
 	unsigned char				m_playerID;
 	unsigned int				m_packetNumber;
 	double						m_timestamp;
+	unsigned char				m_red;
+	unsigned char				m_green;
+	unsigned char				m_blue;
+
 	union PacketData
 	{
 		AckPacket			acknowledged;
@@ -63,7 +67,7 @@ struct MidtermPacket
 		TaggedPacket		tagged;
 	} data;
 
-	inline bool operator< ( const MidtermPacket& rhs ) {
+	inline bool operator < ( const MidtermPacket& rhs ) const {
 		
 		if ( this->m_packetNumber < rhs.m_packetNumber ) {
 			return true;

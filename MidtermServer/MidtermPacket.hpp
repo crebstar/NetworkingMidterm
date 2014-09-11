@@ -67,8 +67,8 @@ struct MidtermPacket
 		TaggedPacket		tagged;
 	} data;
 
-	inline bool operator< ( const MidtermPacket& rhs ) {
-		
+	inline bool operator < ( const MidtermPacket& rhs ) const {
+
 		if ( this->m_packetNumber < rhs.m_packetNumber ) {
 			return true;
 		}

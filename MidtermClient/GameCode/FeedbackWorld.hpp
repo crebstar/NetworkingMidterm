@@ -80,6 +80,7 @@ protected:
 	void computePlayerDesiredPosition( float deltaSeconds );
 	void sendPlayerUpdateDataToServer( float deltaSeconds );
 	void collectPacketDataFromServer( float deltaSeconds );
+	void resetPlayerCache();
 
 	// Initialization and Clean Up
 	void setDefaultVariableValues();

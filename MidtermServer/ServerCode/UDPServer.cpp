@@ -371,7 +371,7 @@ void UDPServer::sendPlayerDataToClients() {
 				MidtermPacket& packetToSend = packetsToSend[i];
 
 				int winSockSendResult = 0;
-				winSockSendResult = sendto( m_listenSocket, (char*) &packetsToSend, sizeof( MidtermPacket ), 0, (sockaddr*) &client->m_clientAddress, sizeof( client->m_clientAddress ) );
+				winSockSendResult = sendto( m_listenSocket, (char*) &packetToSend, sizeof( MidtermPacket ), 0, (sockaddr*) &client->m_clientAddress, sizeof( client->m_clientAddress ) );
 
 				if ( winSockSendResult == SOCKET_ERROR ) {
 

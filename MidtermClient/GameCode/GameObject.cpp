@@ -22,6 +22,7 @@ GameObject::GameObject() {
 	m_orientationDegrees = 0.0f;
 	m_isIt = false;
 	m_isPlayer = false;
+	m_updateProcessedForFrame = false;
 	m_collisionDisk.radius = COLLISION_DISK_RADIUS;
 }
 

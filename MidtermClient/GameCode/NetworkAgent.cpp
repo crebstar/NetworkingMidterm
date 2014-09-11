@@ -144,23 +144,27 @@ bool NetworkAgent::getOrderedPacketsForEachUniqueID( std::map<int,std::set<Midte
 	do {
 
 		MidtermPacket packetReceived;
-		winSockResult = recvfrom( m_serverSocket, (char*) &packetReceived, sizeof( MidtermPacket ), 0, (sockaddr*) &serverAddress, &sizeOfServeraddress );
+		packetReceived.m_playerID = 0;
+		winSockResult = recvfrom( m_serverSocket, (char*) &packetReceived, sizeof( packetReceived ), 0, (sockaddr*) &serverAddress, &sizeOfServeraddress );
 
-		std::map<int,std::set<MidtermPacket>>::iterator itOrd = out_orderedPackets.find( packetReceived.m_playerID );
-		if ( itOrd != out_orderedPackets.end() ) {
+		if ( winSockResult > 0 ) {
+		
+			std::map<int,std::set<MidtermPacket>>::iterator itOrd = out_orderedPackets.find( packetReceived.m_playerID );
+			if ( itOrd != out_orderedPackets.end() ) {
 
-			std::set<MidtermPacket>& orderedPacketsSet = itOrd->second;
-			orderedPacketsSet.insert( packetReceived );
-			packetsWereReceived = true;
+				std::set<MidtermPacket>& orderedPacketsSet = itOrd->second;
+				orderedPacketsSet.insert( packetReceived );
+				packetsWereReceived = true;
 
-		} else {
+			} else {
 
-			std::set<MidtermPacket> orderedPacketSet;
-			orderedPacketSet.insert( packetReceived );
-			out_orderedPackets.insert( std::pair<int,std::set<MidtermPacket>>( packetReceived.m_playerID, orderedPacketSet ) );
-			packetsWereReceived = true;
+				std::set<MidtermPacket> orderedPacketSet;
+				orderedPacketSet.insert( packetReceived );
+				out_orderedPackets.insert( std::pair<int,std::set<MidtermPacket>>( packetReceived.m_playerID, orderedPacketSet ) );
+				packetsWereReceived = true;
+			}
 		}
-
+		
 	} while ( winSockResult > 0 );
 	
 

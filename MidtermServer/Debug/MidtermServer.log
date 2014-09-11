@@ -1,4 +1,4 @@
-﻿Build started 9/11/2014 3:46:19 PM.
+﻿Build started 9/11/2014 4:08:28 PM.
      1>Project "C:\Users\AW 18\Dropbox\GuildHall\Projects\NetworkingMidterm\MidtermServer\MidtermServer.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Debug\MidtermServer.unsuccessfulbuild" because "AlwaysCreate" was specified.
@@ -114,8 +114,6 @@
        LinkEmbedManifest:
          All outputs are up-to-date.
          MidtermServer.vcxproj -> C:\Users\AW 18\Dropbox\GuildHall\Projects\NetworkingMidterm\MidtermServer\\MidtermServer.exe
-       CopyFilesToOutputDirectory:
-         Copying file from "Debug\MidtermServer.pdb" to "C:\Users\AW 18\Dropbox\GuildHall\Projects\NetworkingMidterm\MidtermServer\\MidtermServer.pdb".
        FinalizeBuildStatus:
          Deleting file "Debug\MidtermServer.unsuccessfulbuild".
          Touching "Debug\MidtermServer.lastbuildstate".
@@ -123,4 +121,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.94
+Time Elapsed 00:00:01.89

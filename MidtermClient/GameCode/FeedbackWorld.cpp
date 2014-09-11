@@ -123,6 +123,10 @@ void FeedbackWorld::collectPacketDataFromServer( float deltaSeconds ) {
 							GameObject* newOtherPlayer = new GameObject;
 							newOtherPlayer->m_playerID = packetRec.m_playerID;
 							newOtherPlayer->m_isPlayer = false;
+							newOtherPlayer->m_playerColor.x = cbengine::rangeMapFloat( 0.0f, 255.0f, 0.0f, 1.0f, packetRec.m_red );
+							newOtherPlayer->m_playerColor.y = cbengine::rangeMapFloat( 0.0f, 255.0f, 0.0f, 1.0f, packetRec.m_green );
+							newOtherPlayer->m_playerColor.z = cbengine::rangeMapFloat( 0.0f, 255.0f, 0.0f, 1.0f, packetRec.m_blue );
+							newOtherPlayer->m_playerColor.w = 1.0f;
 							
 							m_otherPlayers.push_back( newOtherPlayer );
 
@@ -131,8 +135,19 @@ void FeedbackWorld::collectPacketDataFromServer( float deltaSeconds ) {
 
 						if ( packetRec.m_packetType == TYPE_Update ) {
 
-							
+							if ( !gamePlayerRecPacket->m_updateProcessedForFrame ) {
+
+								gamePlayerRecPacket->m_position.x = packetRec.data.updated.m_xPosition;
+								gamePlayerRecPacket->m_position.y = packetRec.data.updated.m_yPosition;
+								gamePlayerRecPacket->m_currentVelocity.x = packetRec.data.updated.m_xVelocity;
+								gamePlayerRecPacket->m_currentVelocity.y = packetRec.data.updated.m_yVelocity;
+								gamePlayerRecPacket->m_orientationDegrees = packetRec.data.updated.m_yawDegrees;
+
+								gamePlayerRecPacket->m_updateProcessedForFrame = true;
+							}
 						}
+
+						orderedPacketSet.erase( itPack );
 					}
 				}
 			}
@@ -168,8 +183,8 @@ void FeedbackWorld::sendPlayerUpdateDataToServer( float deltaSeconds ) {
 			playerUpdatePacket.m_packetNumber = 0; // Zero means don't care
 			playerUpdatePacket.m_timestamp = cbutil::getCurrentTimeSeconds();
 	
-			playerUpdatePacket.data.updated.m_xPosition = m_player.m_position.x;
-			playerUpdatePacket.data.updated.m_yPosition = m_player.m_position.y;
+			playerUpdatePacket.data.updated.m_xPosition = m_player.m_desiredPosition.x;
+			playerUpdatePacket.data.updated.m_yPosition = m_player.m_desiredPosition.y;
 			playerUpdatePacket.data.updated.m_xVelocity = m_player.m_currentVelocity.x;
 			playerUpdatePacket.data.updated.m_yVelocity = m_player.m_currentVelocity.y;
 			playerUpdatePacket.data.updated.m_yawDegrees = m_player.m_orientationDegrees;
