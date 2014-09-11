@@ -39,6 +39,7 @@ public:
 	sockaddr_in											m_clientAddress;
 	std::string											m_userID;
 	int													m_playerID;
+	bool												m_isIT;
 
 	std::map<int,CS6Packet>								m_reliablePacketsSentButNotAcked;
 

@@ -296,6 +296,7 @@
     <ClInclude Include="GameCode\FeedbackWorld.hpp" />
     <ClInclude Include="GameCode\GameConstants.hpp" />
     <ClInclude Include="GameCode\GameObject.hpp" />
+    <ClInclude Include="GameCode\MidtermPacket.hpp" />
     <ClInclude Include="GameCode\NetworkAgent.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

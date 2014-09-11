@@ -14,6 +14,7 @@ ConnectedUDPClient::ConnectedUDPClient() {
 	++s_numberOfClients;
 	m_playerID = s_numberOfClients;
 	m_orientationDegrees = 0.0f;
+	m_isIT = false;
 
 	assignColorForPlayer();
 }

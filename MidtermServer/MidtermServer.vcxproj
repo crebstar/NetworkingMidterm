@@ -220,6 +220,7 @@
     <ClInclude Include="..\CBEngine\EngineCode\XMLDocument.hpp" />
     <ClInclude Include="..\CBEngine\EngineCode\XMLNode.hpp" />
     <ClInclude Include="..\CBEngine\EngineCode\XMLParser.hpp" />
+    <ClInclude Include="MidtermPacket.hpp" />
     <ClInclude Include="ServerCode\ConnectedUDPClient.hpp" />
     <ClInclude Include="ServerCode\CS6Packet.hpp" />
     <ClInclude Include="ServerCode\UDPServer.hpp" />

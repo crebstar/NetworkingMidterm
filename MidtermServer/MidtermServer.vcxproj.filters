@@ -642,5 +642,8 @@
     <ClInclude Include="..\CBEngine\EngineCode\XMLParser.hpp">
       <Filter>EngineCode</Filter>
     </ClInclude>
+    <ClInclude Include="MidtermPacket.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
