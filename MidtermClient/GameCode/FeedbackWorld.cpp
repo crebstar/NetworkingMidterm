@@ -65,6 +65,8 @@ void FeedbackWorld::update( float deltaSeconds ) {
 		}
 
 
+		checkForCollisionWithIT( deltaSeconds );
+
 	} else if ( m_gameState == GAME_STATE_WAITING_FOR_SERVER ) {
 
 		attemptToConnectToServer( deltaSeconds );
@@ -230,6 +232,40 @@ void FeedbackWorld::attemptToConnectToServer( float deltaSeconds ) {
 				}
 
 				m_gameState = GAME_STATE_RUNNING;
+			}
+		}
+	}
+}
+
+
+void FeedbackWorld::checkForCollisionWithIT( float deltaSeconds ) {
+
+	if ( m_player.m_isIt ) {
+
+		for ( int i = 0; i < m_otherPlayers.size(); ++i ) {
+
+			GameObject* otherPlayer = m_otherPlayers[i];
+			bool didCollideWithIT = cbengine::doesDiskIntersectDiskOrTouch( m_player.m_collisionDisk, otherPlayer->m_collisionDisk );
+			if ( didCollideWithIT ) {
+
+				MidtermPacket tagPacket;
+				tagPacket.m_packetType = TYPE_Tagged;
+				tagPacket.m_playerID = m_player.m_playerID;
+				tagPacket.m_timestamp = cbutil::getCurrentTimeSeconds();
+				tagPacket.m_packetNumber = 0; // Don't care = 0
+				tagPacket.data.tagged.m_playerIDWhoWasTagged = otherPlayer->m_playerID;
+
+				cbengine::GameDirector* sharedGameDirector = cbengine::GameDirector::sharedDirector();
+				FeedbackGame* fbGame = dynamic_cast<FeedbackGame*>( sharedGameDirector->getCurrentWorld() );
+
+				if ( fbGame != nullptr ) {
+
+					NetworkAgent* nwAgent = fbGame->getCurrentNetworkAgent();
+					if ( nwAgent != nullptr ) {
+
+						nwAgent->sendPlayerDataPacketToServer( tagPacket );
+					}
+				}
 			}
 		}
 	}
