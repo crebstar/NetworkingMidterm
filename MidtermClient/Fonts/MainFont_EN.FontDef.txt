@@ -1,0 +1,2405 @@
+"MainFont" // Internal "virtual" font name
+"en" // 2-digit Locale code (en=english, etc.)
+0 // Encoding type (0=Ascii, 1=UTF8, etc.)
+1 // Number of texture sheets
+72 // pixel height of font in texture
+
+// Ascii char 0 (0x00)
+{
+	false // "true" if we have a glyph for this character code
+}
+
+// Ascii char 1 (0x01)
+{
+	false // "true" if we have a glyph for this character code
+}
+
+// Ascii char 2 (0x02)
+{
+	false // "true" if we have a glyph for this character code
+}
+
+// Ascii char 3 (0x03)
+{
+	false // "true" if we have a glyph for this character code
+}
+
+// Ascii char 4 (0x04)
+{
+	false // "true" if we have a glyph for this character code
+}
+
+// Ascii char 5 (0x05)
+{
+	false // "true" if we have a glyph for this character code
+}
+
+// Ascii char 6 (0x06)
+{
+	false // "true" if we have a glyph for this character code
+}
+
+// Ascii char 7 (0x07)
+{
+	false // "true" if we have a glyph for this character code
+}
+
+// Ascii char 8 (0x08)
+{
+	false // "true" if we have a glyph for this character code
+}
+
+// Ascii char 9 (0x09)
+{
+	false // "true" if we have a glyph for this character code
+}
+
+// Ascii char 10 (0x0a)
+{
+	false // "true" if we have a glyph for this character code
+}
+
+// Ascii char 11 (0x0b)
+{
+	false // "true" if we have a glyph for this character code
+}
+
+// Ascii char 12 (0x0c)
+{
+	false // "true" if we have a glyph for this character code
+}
+
+// Ascii char 13 (0x0d)
+{
+	false // "true" if we have a glyph for this character code
+}
+
+// Ascii char 14 (0x0e)
+{
+	false // "true" if we have a glyph for this character code
+}
+
+// Ascii char 15 (0x0f)
+{
+	false // "true" if we have a glyph for this character code
+}
+
+// Ascii char 16 (0x10)
+{
+	false // "true" if we have a glyph for this character code
+}
+
+// Ascii char 17 (0x11)
+{
+	false // "true" if we have a glyph for this character code
+}
+
+// Ascii char 18 (0x12)
+{
+	false // "true" if we have a glyph for this character code
+}
+
+// Ascii char 19 (0x13)
+{
+	false // "true" if we have a glyph for this character code
+}
+
+// Ascii char 20 (0x14)
+{
+	false // "true" if we have a glyph for this character code
+}
+
+// Ascii char 21 (0x15)
+{
+	false // "true" if we have a glyph for this character code
+}
+
+// Ascii char 22 (0x16)
+{
+	false // "true" if we have a glyph for this character code
+}
+
+// Ascii char 23 (0x17)
+{
+	false // "true" if we have a glyph for this character code
+}
+
+// Ascii char 24 (0x18)
+{
+	false // "true" if we have a glyph for this character code
+}
+
+// Ascii char 25 (0x19)
+{
+	false // "true" if we have a glyph for this character code
+}
+
+// Ascii char 26 (0x1a)
+{
+	false // "true" if we have a glyph for this character code
+}
+
+// Ascii char 27 (0x1b)
+{
+	false // "true" if we have a glyph for this character code
+}
+
+// Ascii char 28 (0x1c)
+{
+	false // "true" if we have a glyph for this character code
+}
+
+// Ascii char 29 (0x1d)
+{
+	false // "true" if we have a glyph for this character code
+}
+
+// Ascii char 30 (0x1e)
+{
+	false // "true" if we have a glyph for this character code
+}
+
+// Ascii char 31 (0x1f)
+{
+	false // "true" if we have a glyph for this character code
+}
+
+// Ascii char 32 (0x20)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.015625,0.015625),(0.0175781,0.0859375)] // Texture coord bounds
+	0 // Font 'A' spacing (pre-draw advancement)
+	0.0277778 // Font 'B' spacing (draw width advancement)
+	0.222222 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 33 (0x21)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.0332031,0.015625),(0.0429688,0.0859375)] // Texture coord bounds
+	0.0833333 // Font 'A' spacing (pre-draw advancement)
+	0.138889 // Font 'B' spacing (draw width advancement)
+	0.0833333 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 34 (0x22)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.0585938,0.015625),(0.0771484,0.0859375)] // Texture coord bounds
+	0.0277778 // Font 'A' spacing (pre-draw advancement)
+	0.263889 // Font 'B' spacing (draw width advancement)
+	0.0138889 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 35 (0x23)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.0927734,0.015625),(0.126953,0.0859375)] // Texture coord bounds
+	0.0138889 // Font 'A' spacing (pre-draw advancement)
+	0.486111 // Font 'B' spacing (draw width advancement)
+	0 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 36 (0x24)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.142578,0.015625),(0.168945,0.0859375)] // Texture coord bounds
+	0.0555556 // Font 'A' spacing (pre-draw advancement)
+	0.375 // Font 'B' spacing (draw width advancement)
+	0.0555556 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 37 (0x25)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.18457,0.015625),(0.220703,0.0859375)] // Texture coord bounds
+	0.0138889 // Font 'A' spacing (pre-draw advancement)
+	0.513889 // Font 'B' spacing (draw width advancement)
+	0.0416667 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 38 (0x26)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.236328,0.015625),(0.270508,0.0859375)] // Texture coord bounds
+	0.0416667 // Font 'A' spacing (pre-draw advancement)
+	0.486111 // Font 'B' spacing (draw width advancement)
+	0.0555556 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 39 (0x27)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.286133,0.015625),(0.293945,0.0859375)] // Texture coord bounds
+	0.0416667 // Font 'A' spacing (pre-draw advancement)
+	0.111111 // Font 'B' spacing (draw width advancement)
+	0.0416667 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 40 (0x28)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.30957,0.015625),(0.324219,0.0859375)] // Texture coord bounds
+	0.0555556 // Font 'A' spacing (pre-draw advancement)
+	0.208333 // Font 'B' spacing (draw width advancement)
+	0.0416667 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 41 (0x29)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.339844,0.015625),(0.354492,0.0859375)] // Texture coord bounds
+	0.0694444 // Font 'A' spacing (pre-draw advancement)
+	0.208333 // Font 'B' spacing (draw width advancement)
+	0.0277778 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 42 (0x2a)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.370117,0.015625),(0.393555,0.0859375)] // Texture coord bounds
+	0.0138889 // Font 'A' spacing (pre-draw advancement)
+	0.333333 // Font 'B' spacing (draw width advancement)
+	0.0138889 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 43 (0x2b)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.40918,0.015625),(0.435547,0.0859375)] // Texture coord bounds
+	0.0694444 // Font 'A' spacing (pre-draw advancement)
+	0.375 // Font 'B' spacing (draw width advancement)
+	0.0416667 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 44 (0x2c)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.451172,0.015625),(0.463867,0.0859375)] // Texture coord bounds
+	0.0416667 // Font 'A' spacing (pre-draw advancement)
+	0.180556 // Font 'B' spacing (draw width advancement)
+	0.0833333 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 45 (0x2d)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.479492,0.015625),(0.495117,0.0859375)] // Texture coord bounds
+	0.0416667 // Font 'A' spacing (pre-draw advancement)
+	0.222222 // Font 'B' spacing (draw width advancement)
+	0.0416667 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 46 (0x2e)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.510742,0.015625),(0.521484,0.0859375)] // Texture coord bounds
+	0.0694444 // Font 'A' spacing (pre-draw advancement)
+	0.152778 // Font 'B' spacing (draw width advancement)
+	0.0833333 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 47 (0x2f)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.537109,0.015625),(0.560547,0.0859375)] // Texture coord bounds
+	0 // Font 'A' spacing (pre-draw advancement)
+	0.333333 // Font 'B' spacing (draw width advancement)
+	0 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 48 (0x30)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.576172,0.015625),(0.606445,0.0859375)] // Texture coord bounds
+	0.0277778 // Font 'A' spacing (pre-draw advancement)
+	0.430556 // Font 'B' spacing (draw width advancement)
+	0.0277778 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 49 (0x31)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.62207,0.015625),(0.637695,0.0859375)] // Texture coord bounds
+	0.111111 // Font 'A' spacing (pre-draw advancement)
+	0.222222 // Font 'B' spacing (draw width advancement)
+	0.152778 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 50 (0x32)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.65332,0.015625),(0.680664,0.0859375)] // Texture coord bounds
+	0.0555556 // Font 'A' spacing (pre-draw advancement)
+	0.388889 // Font 'B' spacing (draw width advancement)
+	0.0416667 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 51 (0x33)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.696289,0.015625),(0.72168,0.0859375)] // Texture coord bounds
+	0.0694444 // Font 'A' spacing (pre-draw advancement)
+	0.361111 // Font 'B' spacing (draw width advancement)
+	0.0555556 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 52 (0x34)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.737305,0.015625),(0.767578,0.0859375)] // Texture coord bounds
+	0.0277778 // Font 'A' spacing (pre-draw advancement)
+	0.430556 // Font 'B' spacing (draw width advancement)
+	0.0277778 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 53 (0x35)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.783203,0.015625),(0.80957,0.0859375)] // Texture coord bounds
+	0.0555556 // Font 'A' spacing (pre-draw advancement)
+	0.375 // Font 'B' spacing (draw width advancement)
+	0.0555556 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 54 (0x36)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.825195,0.015625),(0.853516,0.0859375)] // Texture coord bounds
+	0.0555556 // Font 'A' spacing (pre-draw advancement)
+	0.402778 // Font 'B' spacing (draw width advancement)
+	0.0277778 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 55 (0x37)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.869141,0.015625),(0.897461,0.0859375)] // Texture coord bounds
+	0.0694444 // Font 'A' spacing (pre-draw advancement)
+	0.402778 // Font 'B' spacing (draw width advancement)
+	0.0138889 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 56 (0x38)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.913086,0.015625),(0.941406,0.0859375)] // Texture coord bounds
+	0.0416667 // Font 'A' spacing (pre-draw advancement)
+	0.402778 // Font 'B' spacing (draw width advancement)
+	0.0416667 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 57 (0x39)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.957031,0.015625),(0.985352,0.0859375)] // Texture coord bounds
+	0.0416667 // Font 'A' spacing (pre-draw advancement)
+	0.402778 // Font 'B' spacing (draw width advancement)
+	0.0416667 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 58 (0x3a)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.015625,0.101563),(0.0263672,0.171875)] // Texture coord bounds
+	0.0694444 // Font 'A' spacing (pre-draw advancement)
+	0.152778 // Font 'B' spacing (draw width advancement)
+	0.0833333 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 59 (0x3b)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.0419922,0.101563),(0.0546875,0.171875)] // Texture coord bounds
+	0.0416667 // Font 'A' spacing (pre-draw advancement)
+	0.180556 // Font 'B' spacing (draw width advancement)
+	0.0833333 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 60 (0x3c)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.0703125,0.101563),(0.09375,0.171875)] // Texture coord bounds
+	0.0694444 // Font 'A' spacing (pre-draw advancement)
+	0.333333 // Font 'B' spacing (draw width advancement)
+	0.0833333 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 61 (0x3d)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.109375,0.101563),(0.134766,0.171875)] // Texture coord bounds
+	0.0694444 // Font 'A' spacing (pre-draw advancement)
+	0.361111 // Font 'B' spacing (draw width advancement)
+	0.0555556 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 62 (0x3e)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.150391,0.101563),(0.172852,0.171875)] // Texture coord bounds
+	0.111111 // Font 'A' spacing (pre-draw advancement)
+	0.319444 // Font 'B' spacing (draw width advancement)
+	0.0555556 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 63 (0x3f)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.188477,0.101563),(0.209961,0.171875)] // Texture coord bounds
+	0.0277778 // Font 'A' spacing (pre-draw advancement)
+	0.305556 // Font 'B' spacing (draw width advancement)
+	0.0277778 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 64 (0x40)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.225586,0.101563),(0.266602,0.171875)] // Texture coord bounds
+	0.0277778 // Font 'A' spacing (pre-draw advancement)
+	0.583333 // Font 'B' spacing (draw width advancement)
+	0.0277778 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 65 (0x41)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.282227,0.101563),(0.319336,0.171875)] // Texture coord bounds
+	0 // Font 'A' spacing (pre-draw advancement)
+	0.527778 // Font 'B' spacing (draw width advancement)
+	0 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 66 (0x42)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.334961,0.101563),(0.363281,0.171875)] // Texture coord bounds
+	0.0555556 // Font 'A' spacing (pre-draw advancement)
+	0.402778 // Font 'B' spacing (draw width advancement)
+	0.0416667 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 67 (0x43)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.378906,0.101563),(0.410156,0.171875)] // Texture coord bounds
+	0.0277778 // Font 'A' spacing (pre-draw advancement)
+	0.444444 // Font 'B' spacing (draw width advancement)
+	0.0277778 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 68 (0x44)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.425781,0.101563),(0.456055,0.171875)] // Texture coord bounds
+	0.0555556 // Font 'A' spacing (pre-draw advancement)
+	0.430556 // Font 'B' spacing (draw width advancement)
+	0.0416667 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 69 (0x45)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.47168,0.101563),(0.498047,0.171875)] // Texture coord bounds
+	0.0555556 // Font 'A' spacing (pre-draw advancement)
+	0.375 // Font 'B' spacing (draw width advancement)
+	0.0416667 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 70 (0x46)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.513672,0.101563),(0.541016,0.171875)] // Texture coord bounds
+	0.0555556 // Font 'A' spacing (pre-draw advancement)
+	0.388889 // Font 'B' spacing (draw width advancement)
+	0.0416667 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 71 (0x47)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.556641,0.101563),(0.591797,0.171875)] // Texture coord bounds
+	0.0277778 // Font 'A' spacing (pre-draw advancement)
+	0.5 // Font 'B' spacing (draw width advancement)
+	0.0277778 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 72 (0x48)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.607422,0.101563),(0.638672,0.171875)] // Texture coord bounds
+	0.0555556 // Font 'A' spacing (pre-draw advancement)
+	0.444444 // Font 'B' spacing (draw width advancement)
+	0.0694444 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 73 (0x49)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.654297,0.101563),(0.662109,0.171875)] // Texture coord bounds
+	0.0555556 // Font 'A' spacing (pre-draw advancement)
+	0.111111 // Font 'B' spacing (draw width advancement)
+	0.0694444 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 74 (0x4a)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.677734,0.101563),(0.705078,0.171875)] // Texture coord bounds
+	0 // Font 'A' spacing (pre-draw advancement)
+	0.388889 // Font 'B' spacing (draw width advancement)
+	0.0555556 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 75 (0x4b)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.720703,0.101563),(0.75293,0.171875)] // Texture coord bounds
+	0.0555556 // Font 'A' spacing (pre-draw advancement)
+	0.458333 // Font 'B' spacing (draw width advancement)
+	0 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 76 (0x4c)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.768555,0.101563),(0.794922,0.171875)] // Texture coord bounds
+	0.0555556 // Font 'A' spacing (pre-draw advancement)
+	0.375 // Font 'B' spacing (draw width advancement)
+	0.0277778 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 77 (0x4d)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.810547,0.101563),(0.853516,0.171875)] // Texture coord bounds
+	0.0138889 // Font 'A' spacing (pre-draw advancement)
+	0.611111 // Font 'B' spacing (draw width advancement)
+	0 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 78 (0x4e)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.869141,0.101563),(0.900391,0.171875)] // Texture coord bounds
+	0.0555556 // Font 'A' spacing (pre-draw advancement)
+	0.444444 // Font 'B' spacing (draw width advancement)
+	0.0555556 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 79 (0x4f)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.916016,0.101563),(0.953125,0.171875)] // Texture coord bounds
+	0.0277778 // Font 'A' spacing (pre-draw advancement)
+	0.527778 // Font 'B' spacing (draw width advancement)
+	0.0277778 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 80 (0x50)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.96875,0.101563),(0.996094,0.171875)] // Texture coord bounds
+	0.0555556 // Font 'A' spacing (pre-draw advancement)
+	0.388889 // Font 'B' spacing (draw width advancement)
+	0.0416667 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 81 (0x51)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.015625,0.1875),(0.0585938,0.257813)] // Texture coord bounds
+	0.0277778 // Font 'A' spacing (pre-draw advancement)
+	0.611111 // Font 'B' spacing (draw width advancement)
+	-0.0416667 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 82 (0x52)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.0742188,0.1875),(0.106445,0.257813)] // Texture coord bounds
+	0.0555556 // Font 'A' spacing (pre-draw advancement)
+	0.458333 // Font 'B' spacing (draw width advancement)
+	0 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 83 (0x53)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.12207,0.1875),(0.148438,0.257813)] // Texture coord bounds
+	0.0277778 // Font 'A' spacing (pre-draw advancement)
+	0.375 // Font 'B' spacing (draw width advancement)
+	0.0277778 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 84 (0x54)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.164063,0.1875),(0.197266,0.257813)] // Texture coord bounds
+	0.0138889 // Font 'A' spacing (pre-draw advancement)
+	0.472222 // Font 'B' spacing (draw width advancement)
+	0.0138889 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 85 (0x55)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.212891,0.1875),(0.243164,0.257813)] // Texture coord bounds
+	0.0555556 // Font 'A' spacing (pre-draw advancement)
+	0.430556 // Font 'B' spacing (draw width advancement)
+	0.0694444 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 86 (0x56)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.258789,0.1875),(0.294922,0.257813)] // Texture coord bounds
+	0 // Font 'A' spacing (pre-draw advancement)
+	0.513889 // Font 'B' spacing (draw width advancement)
+	0 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 87 (0x57)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.310547,0.1875),(0.362305,0.257813)] // Texture coord bounds
+	0 // Font 'A' spacing (pre-draw advancement)
+	0.736111 // Font 'B' spacing (draw width advancement)
+	0 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 88 (0x58)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.37793,0.1875),(0.413086,0.257813)] // Texture coord bounds
+	0 // Font 'A' spacing (pre-draw advancement)
+	0.5 // Font 'B' spacing (draw width advancement)
+	0 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 89 (0x59)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.428711,0.1875),(0.463867,0.257813)] // Texture coord bounds
+	0 // Font 'A' spacing (pre-draw advancement)
+	0.5 // Font 'B' spacing (draw width advancement)
+	0.0138889 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 90 (0x5a)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.479492,0.1875),(0.507813,0.257813)] // Texture coord bounds
+	0.0277778 // Font 'A' spacing (pre-draw advancement)
+	0.402778 // Font 'B' spacing (draw width advancement)
+	0.0277778 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 91 (0x5b)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.523438,0.1875),(0.538086,0.257813)] // Texture coord bounds
+	0.0694444 // Font 'A' spacing (pre-draw advancement)
+	0.208333 // Font 'B' spacing (draw width advancement)
+	0.0555556 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 92 (0x5c)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.553711,0.1875),(0.575195,0.257813)] // Texture coord bounds
+	0 // Font 'A' spacing (pre-draw advancement)
+	0.305556 // Font 'B' spacing (draw width advancement)
+	0 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 93 (0x5d)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.59082,0.1875),(0.605469,0.257813)] // Texture coord bounds
+	0.0555556 // Font 'A' spacing (pre-draw advancement)
+	0.208333 // Font 'B' spacing (draw width advancement)
+	0.0694444 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 94 (0x5e)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.621094,0.1875),(0.644531,0.257813)] // Texture coord bounds
+	0.0694444 // Font 'A' spacing (pre-draw advancement)
+	0.333333 // Font 'B' spacing (draw width advancement)
+	0.0833333 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 95 (0x5f)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.660156,0.1875),(0.694336,0.257813)] // Texture coord bounds
+	0 // Font 'A' spacing (pre-draw advancement)
+	0.486111 // Font 'B' spacing (draw width advancement)
+	0 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 96 (0x60)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.709961,0.1875),(0.723633,0.257813)] // Texture coord bounds
+	0.138889 // Font 'A' spacing (pre-draw advancement)
+	0.194444 // Font 'B' spacing (draw width advancement)
+	0.152778 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 97 (0x61)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.739258,0.1875),(0.766602,0.257813)] // Texture coord bounds
+	0.0277778 // Font 'A' spacing (pre-draw advancement)
+	0.388889 // Font 'B' spacing (draw width advancement)
+	0.0277778 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 98 (0x62)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.782227,0.1875),(0.810547,0.257813)] // Texture coord bounds
+	0.0416667 // Font 'A' spacing (pre-draw advancement)
+	0.402778 // Font 'B' spacing (draw width advancement)
+	0.0416667 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 99 (0x63)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.826172,0.1875),(0.852539,0.257813)] // Texture coord bounds
+	0.0277778 // Font 'A' spacing (pre-draw advancement)
+	0.375 // Font 'B' spacing (draw width advancement)
+	0.0277778 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 100 (0x64)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.868164,0.1875),(0.896484,0.257813)] // Texture coord bounds
+	0.0277778 // Font 'A' spacing (pre-draw advancement)
+	0.402778 // Font 'B' spacing (draw width advancement)
+	0.0555556 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 101 (0x65)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.912109,0.1875),(0.941406,0.257813)] // Texture coord bounds
+	0.0277778 // Font 'A' spacing (pre-draw advancement)
+	0.416667 // Font 'B' spacing (draw width advancement)
+	0.0277778 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 102 (0x66)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.957031,0.1875),(0.978516,0.257813)] // Texture coord bounds
+	0.0138889 // Font 'A' spacing (pre-draw advancement)
+	0.305556 // Font 'B' spacing (draw width advancement)
+	0 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 103 (0x67)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.015625,0.273438),(0.0439453,0.34375)] // Texture coord bounds
+	0.0138889 // Font 'A' spacing (pre-draw advancement)
+	0.402778 // Font 'B' spacing (draw width advancement)
+	0 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 104 (0x68)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.0595703,0.273438),(0.0869141,0.34375)] // Texture coord bounds
+	0.0555556 // Font 'A' spacing (pre-draw advancement)
+	0.388889 // Font 'B' spacing (draw width advancement)
+	0.0416667 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 105 (0x69)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.102539,0.273438),(0.115234,0.34375)] // Texture coord bounds
+	0.0277778 // Font 'A' spacing (pre-draw advancement)
+	0.180556 // Font 'B' spacing (draw width advancement)
+	0.0416667 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 106 (0x6a)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.130859,0.273438),(0.148438,0.34375)] // Texture coord bounds
+	0 // Font 'A' spacing (pre-draw advancement)
+	0.25 // Font 'B' spacing (draw width advancement)
+	0.0694444 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 107 (0x6b)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.164063,0.273438),(0.192383,0.34375)] // Texture coord bounds
+	0.0555556 // Font 'A' spacing (pre-draw advancement)
+	0.402778 // Font 'B' spacing (draw width advancement)
+	0 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 108 (0x6c)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.208008,0.273438),(0.21875,0.34375)] // Texture coord bounds
+	0.0694444 // Font 'A' spacing (pre-draw advancement)
+	0.152778 // Font 'B' spacing (draw width advancement)
+	0.0277778 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 109 (0x6d)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.234375,0.273438),(0.277344,0.34375)] // Texture coord bounds
+	0.0555556 // Font 'A' spacing (pre-draw advancement)
+	0.611111 // Font 'B' spacing (draw width advancement)
+	0.0416667 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 110 (0x6e)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.292969,0.273438),(0.320313,0.34375)] // Texture coord bounds
+	0.0555556 // Font 'A' spacing (pre-draw advancement)
+	0.388889 // Font 'B' spacing (draw width advancement)
+	0.0416667 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 111 (0x6f)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.335938,0.273438),(0.365234,0.34375)] // Texture coord bounds
+	0.0277778 // Font 'A' spacing (pre-draw advancement)
+	0.416667 // Font 'B' spacing (draw width advancement)
+	0.0277778 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 112 (0x70)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.380859,0.273438),(0.40918,0.34375)] // Texture coord bounds
+	0.0416667 // Font 'A' spacing (pre-draw advancement)
+	0.402778 // Font 'B' spacing (draw width advancement)
+	0.0416667 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 113 (0x71)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.424805,0.273438),(0.453125,0.34375)] // Texture coord bounds
+	0.0277778 // Font 'A' spacing (pre-draw advancement)
+	0.402778 // Font 'B' spacing (draw width advancement)
+	0.0555556 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 114 (0x72)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.46875,0.273438),(0.489258,0.34375)] // Texture coord bounds
+	0.0555556 // Font 'A' spacing (pre-draw advancement)
+	0.291667 // Font 'B' spacing (draw width advancement)
+	0.0138889 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 115 (0x73)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.504883,0.273438),(0.526367,0.34375)] // Texture coord bounds
+	0.0277778 // Font 'A' spacing (pre-draw advancement)
+	0.305556 // Font 'B' spacing (draw width advancement)
+	0.0277778 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 116 (0x74)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.541992,0.273438),(0.5625,0.34375)] // Texture coord bounds
+	0.0138889 // Font 'A' spacing (pre-draw advancement)
+	0.291667 // Font 'B' spacing (draw width advancement)
+	0.0277778 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 117 (0x75)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.578125,0.273438),(0.605469,0.34375)] // Texture coord bounds
+	0.0555556 // Font 'A' spacing (pre-draw advancement)
+	0.388889 // Font 'B' spacing (draw width advancement)
+	0.0416667 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 118 (0x76)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.621094,0.273438),(0.652344,0.34375)] // Texture coord bounds
+	0 // Font 'A' spacing (pre-draw advancement)
+	0.444444 // Font 'B' spacing (draw width advancement)
+	0 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 119 (0x77)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.667969,0.273438),(0.712891,0.34375)] // Texture coord bounds
+	0 // Font 'A' spacing (pre-draw advancement)
+	0.638889 // Font 'B' spacing (draw width advancement)
+	0 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 120 (0x78)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.728516,0.273438),(0.760742,0.34375)] // Texture coord bounds
+	0 // Font 'A' spacing (pre-draw advancement)
+	0.458333 // Font 'B' spacing (draw width advancement)
+	0 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 121 (0x79)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.776367,0.273438),(0.807617,0.34375)] // Texture coord bounds
+	0 // Font 'A' spacing (pre-draw advancement)
+	0.444444 // Font 'B' spacing (draw width advancement)
+	0 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 122 (0x7a)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.823242,0.273438),(0.850586,0.34375)] // Texture coord bounds
+	0.0277778 // Font 'A' spacing (pre-draw advancement)
+	0.388889 // Font 'B' spacing (draw width advancement)
+	0.0277778 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 123 (0x7b)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.866211,0.273438),(0.888672,0.34375)] // Texture coord bounds
+	0.0138889 // Font 'A' spacing (pre-draw advancement)
+	0.319444 // Font 'B' spacing (draw width advancement)
+	0.0277778 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 124 (0x7c)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.904297,0.273438),(0.911133,0.34375)] // Texture coord bounds
+	0.194444 // Font 'A' spacing (pre-draw advancement)
+	0.0972222 // Font 'B' spacing (draw width advancement)
+	0.194444 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 125 (0x7d)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.926758,0.273438),(0.948242,0.34375)] // Texture coord bounds
+	0.0277778 // Font 'A' spacing (pre-draw advancement)
+	0.305556 // Font 'B' spacing (draw width advancement)
+	0.0277778 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 126 (0x7e)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.963867,0.273438),(0.987305,0.34375)] // Texture coord bounds
+	0.0694444 // Font 'A' spacing (pre-draw advancement)
+	0.333333 // Font 'B' spacing (draw width advancement)
+	0.0833333 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 127 (0x7f)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.015625,0.359375),(0.0556641,0.429688)] // Texture coord bounds
+	0.0972222 // Font 'A' spacing (pre-draw advancement)
+	0.569444 // Font 'B' spacing (draw width advancement)
+	0.0972222 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 128 (0x80)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.0712891,0.359375),(0.102539,0.429688)] // Texture coord bounds
+	0.0277778 // Font 'A' spacing (pre-draw advancement)
+	0.444444 // Font 'B' spacing (draw width advancement)
+	0.0138889 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 129 (0x81)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.118164,0.359375),(0.158203,0.429688)] // Texture coord bounds
+	0.0972222 // Font 'A' spacing (pre-draw advancement)
+	0.569444 // Font 'B' spacing (draw width advancement)
+	0.0972222 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 130 (0x82)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.173828,0.359375),(0.18457,0.429688)] // Texture coord bounds
+	0.0694444 // Font 'A' spacing (pre-draw advancement)
+	0.152778 // Font 'B' spacing (draw width advancement)
+	0.0833333 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 131 (0x83)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.200195,0.359375),(0.231445,0.429688)] // Texture coord bounds
+	-0.0694444 // Font 'A' spacing (pre-draw advancement)
+	0.444444 // Font 'B' spacing (draw width advancement)
+	-0.0138889 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 132 (0x84)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.24707,0.359375),(0.270508,0.429688)] // Texture coord bounds
+	0.0555556 // Font 'A' spacing (pre-draw advancement)
+	0.333333 // Font 'B' spacing (draw width advancement)
+	0.0416667 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 133 (0x85)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.286133,0.359375),(0.323242,0.429688)] // Texture coord bounds
+	0.0416667 // Font 'A' spacing (pre-draw advancement)
+	0.527778 // Font 'B' spacing (draw width advancement)
+	0.0416667 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 134 (0x86)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.338867,0.359375),(0.365234,0.429688)] // Texture coord bounds
+	0 // Font 'A' spacing (pre-draw advancement)
+	0.375 // Font 'B' spacing (draw width advancement)
+	0.0138889 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 135 (0x87)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.380859,0.359375),(0.407227,0.429688)] // Texture coord bounds
+	0 // Font 'A' spacing (pre-draw advancement)
+	0.375 // Font 'B' spacing (draw width advancement)
+	0.0138889 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 136 (0x88)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.422852,0.359375),(0.446289,0.429688)] // Texture coord bounds
+	0.0694444 // Font 'A' spacing (pre-draw advancement)
+	0.333333 // Font 'B' spacing (draw width advancement)
+	0.0833333 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 137 (0x89)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.461914,0.359375),(0.517578,0.429688)] // Texture coord bounds
+	0.0138889 // Font 'A' spacing (pre-draw advancement)
+	0.791667 // Font 'B' spacing (draw width advancement)
+	0.0416667 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 138 (0x8a)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.533203,0.359375),(0.55957,0.429688)] // Texture coord bounds
+	0.0277778 // Font 'A' spacing (pre-draw advancement)
+	0.375 // Font 'B' spacing (draw width advancement)
+	0.0277778 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 139 (0x8b)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.575195,0.359375),(0.587891,0.429688)] // Texture coord bounds
+	0.0416667 // Font 'A' spacing (pre-draw advancement)
+	0.180556 // Font 'B' spacing (draw width advancement)
+	0.0833333 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 140 (0x8c)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.603516,0.359375),(0.658203,0.429688)] // Texture coord bounds
+	0.0277778 // Font 'A' spacing (pre-draw advancement)
+	0.777778 // Font 'B' spacing (draw width advancement)
+	0.0138889 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 141 (0x8d)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.673828,0.359375),(0.713867,0.429688)] // Texture coord bounds
+	0.0972222 // Font 'A' spacing (pre-draw advancement)
+	0.569444 // Font 'B' spacing (draw width advancement)
+	0.0972222 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 142 (0x8e)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.729492,0.359375),(0.757813,0.429688)] // Texture coord bounds
+	0.0277778 // Font 'A' spacing (pre-draw advancement)
+	0.402778 // Font 'B' spacing (draw width advancement)
+	0.0277778 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 143 (0x8f)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.773438,0.359375),(0.813477,0.429688)] // Texture coord bounds
+	0.0972222 // Font 'A' spacing (pre-draw advancement)
+	0.569444 // Font 'B' spacing (draw width advancement)
+	0.0972222 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 144 (0x90)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.829102,0.359375),(0.869141,0.429688)] // Texture coord bounds
+	0.0972222 // Font 'A' spacing (pre-draw advancement)
+	0.569444 // Font 'B' spacing (draw width advancement)
+	0.0972222 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 145 (0x91)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.884766,0.359375),(0.895508,0.429688)] // Texture coord bounds
+	0.0833333 // Font 'A' spacing (pre-draw advancement)
+	0.152778 // Font 'B' spacing (draw width advancement)
+	0.0694444 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 146 (0x92)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.911133,0.359375),(0.921875,0.429688)] // Texture coord bounds
+	0.0694444 // Font 'A' spacing (pre-draw advancement)
+	0.152778 // Font 'B' spacing (draw width advancement)
+	0.0833333 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 147 (0x93)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.9375,0.359375),(0.960938,0.429688)] // Texture coord bounds
+	0.0833333 // Font 'A' spacing (pre-draw advancement)
+	0.333333 // Font 'B' spacing (draw width advancement)
+	0.0694444 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 148 (0x94)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.015625,0.445313),(0.0390625,0.515625)] // Texture coord bounds
+	0.0694444 // Font 'A' spacing (pre-draw advancement)
+	0.333333 // Font 'B' spacing (draw width advancement)
+	0.0833333 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 149 (0x95)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.0546875,0.445313),(0.0732422,0.515625)] // Texture coord bounds
+	0.0833333 // Font 'A' spacing (pre-draw advancement)
+	0.263889 // Font 'B' spacing (draw width advancement)
+	0.0833333 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 150 (0x96)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.0888672,0.445313),(0.105469,0.515625)] // Texture coord bounds
+	0.0277778 // Font 'A' spacing (pre-draw advancement)
+	0.236111 // Font 'B' spacing (draw width advancement)
+	0.0416667 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 151 (0x97)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.121094,0.445313),(0.160156,0.515625)] // Texture coord bounds
+	0.0277778 // Font 'A' spacing (pre-draw advancement)
+	0.555556 // Font 'B' spacing (draw width advancement)
+	0.0277778 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 152 (0x98)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.175781,0.445313),(0.196289,0.515625)] // Texture coord bounds
+	0.0972222 // Font 'A' spacing (pre-draw advancement)
+	0.291667 // Font 'B' spacing (draw width advancement)
+	0.0972222 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 153 (0x99)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.211914,0.445313),(0.24707,0.515625)] // Texture coord bounds
+	0.0555556 // Font 'A' spacing (pre-draw advancement)
+	0.5 // Font 'B' spacing (draw width advancement)
+	-0.0138889 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 154 (0x9a)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.262695,0.445313),(0.286133,0.515625)] // Texture coord bounds
+	0.0138889 // Font 'A' spacing (pre-draw advancement)
+	0.333333 // Font 'B' spacing (draw width advancement)
+	0.0138889 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 155 (0x9b)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.301758,0.445313),(0.314453,0.515625)] // Texture coord bounds
+	0.0694444 // Font 'A' spacing (pre-draw advancement)
+	0.180556 // Font 'B' spacing (draw width advancement)
+	0.0555556 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 156 (0x9c)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.330078,0.445313),(0.380859,0.515625)] // Texture coord bounds
+	0.0138889 // Font 'A' spacing (pre-draw advancement)
+	0.722222 // Font 'B' spacing (draw width advancement)
+	0.0138889 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 157 (0x9d)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.396484,0.445313),(0.436523,0.515625)] // Texture coord bounds
+	0.0972222 // Font 'A' spacing (pre-draw advancement)
+	0.569444 // Font 'B' spacing (draw width advancement)
+	0.0972222 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 158 (0x9e)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.452148,0.445313),(0.479492,0.515625)] // Texture coord bounds
+	0.0277778 // Font 'A' spacing (pre-draw advancement)
+	0.388889 // Font 'B' spacing (draw width advancement)
+	0.0277778 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 159 (0x9f)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.495117,0.445313),(0.530273,0.515625)] // Texture coord bounds
+	0 // Font 'A' spacing (pre-draw advancement)
+	0.5 // Font 'B' spacing (draw width advancement)
+	0.0138889 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 160 (0xa0)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.545898,0.445313),(0.547852,0.515625)] // Texture coord bounds
+	0 // Font 'A' spacing (pre-draw advancement)
+	0.0277778 // Font 'B' spacing (draw width advancement)
+	0.222222 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 161 (0xa1)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.563477,0.445313),(0.573242,0.515625)] // Texture coord bounds
+	0.0833333 // Font 'A' spacing (pre-draw advancement)
+	0.138889 // Font 'B' spacing (draw width advancement)
+	0.0833333 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 162 (0xa2)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.588867,0.445313),(0.609375,0.515625)] // Texture coord bounds
+	0.0833333 // Font 'A' spacing (pre-draw advancement)
+	0.291667 // Font 'B' spacing (draw width advancement)
+	0.111111 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 163 (0xa3)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.625,0.445313),(0.652344,0.515625)] // Texture coord bounds
+	0.0277778 // Font 'A' spacing (pre-draw advancement)
+	0.388889 // Font 'B' spacing (draw width advancement)
+	0.0138889 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 164 (0xa4)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.667969,0.445313),(0.697266,0.515625)] // Texture coord bounds
+	0.0277778 // Font 'A' spacing (pre-draw advancement)
+	0.416667 // Font 'B' spacing (draw width advancement)
+	0.0416667 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 165 (0xa5)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.712891,0.445313),(0.748047,0.515625)] // Texture coord bounds
+	0 // Font 'A' spacing (pre-draw advancement)
+	0.5 // Font 'B' spacing (draw width advancement)
+	0 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 166 (0xa6)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.763672,0.445313),(0.770508,0.515625)] // Texture coord bounds
+	0.194444 // Font 'A' spacing (pre-draw advancement)
+	0.0972222 // Font 'B' spacing (draw width advancement)
+	0.194444 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 167 (0xa7)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.786133,0.445313),(0.811523,0.515625)] // Texture coord bounds
+	0.0277778 // Font 'A' spacing (pre-draw advancement)
+	0.361111 // Font 'B' spacing (draw width advancement)
+	0 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 168 (0xa8)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.827148,0.445313),(0.852539,0.515625)] // Texture coord bounds
+	0.0555556 // Font 'A' spacing (pre-draw advancement)
+	0.361111 // Font 'B' spacing (draw width advancement)
+	0.0694444 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 169 (0xa9)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.868164,0.445313),(0.908203,0.515625)] // Texture coord bounds
+	0.0277778 // Font 'A' spacing (pre-draw advancement)
+	0.569444 // Font 'B' spacing (draw width advancement)
+	0 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 170 (0xaa)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.923828,0.445313),(0.942383,0.515625)] // Texture coord bounds
+	0.0555556 // Font 'A' spacing (pre-draw advancement)
+	0.263889 // Font 'B' spacing (draw width advancement)
+	0.0416667 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 171 (0xab)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.958008,0.445313),(0.984375,0.515625)] // Texture coord bounds
+	0.0277778 // Font 'A' spacing (pre-draw advancement)
+	0.375 // Font 'B' spacing (draw width advancement)
+	0.0833333 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 172 (0xac)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.015625,0.53125),(0.0410156,0.601563)] // Texture coord bounds
+	0.0694444 // Font 'A' spacing (pre-draw advancement)
+	0.361111 // Font 'B' spacing (draw width advancement)
+	0.0555556 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 173 (0xad)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.0566406,0.53125),(0.0722656,0.601563)] // Texture coord bounds
+	0.0416667 // Font 'A' spacing (pre-draw advancement)
+	0.222222 // Font 'B' spacing (draw width advancement)
+	0.0416667 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 174 (0xae)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.0878906,0.53125),(0.12793,0.601563)] // Texture coord bounds
+	0.0277778 // Font 'A' spacing (pre-draw advancement)
+	0.569444 // Font 'B' spacing (draw width advancement)
+	0 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 175 (0xaf)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.143555,0.53125),(0.177734,0.601563)] // Texture coord bounds
+	0 // Font 'A' spacing (pre-draw advancement)
+	0.486111 // Font 'B' spacing (draw width advancement)
+	0 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 176 (0xb0)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.193359,0.53125),(0.208008,0.601563)] // Texture coord bounds
+	0.152778 // Font 'A' spacing (pre-draw advancement)
+	0.208333 // Font 'B' spacing (draw width advancement)
+	0.125 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 177 (0xb1)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.223633,0.53125),(0.25,0.601563)] // Texture coord bounds
+	0.0694444 // Font 'A' spacing (pre-draw advancement)
+	0.375 // Font 'B' spacing (draw width advancement)
+	0.0416667 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 178 (0xb2)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.265625,0.53125),(0.28418,0.601563)] // Texture coord bounds
+	0.0416667 // Font 'A' spacing (pre-draw advancement)
+	0.263889 // Font 'B' spacing (draw width advancement)
+	0.0694444 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 179 (0xb3)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.299805,0.53125),(0.316406,0.601563)] // Texture coord bounds
+	0.0555556 // Font 'A' spacing (pre-draw advancement)
+	0.236111 // Font 'B' spacing (draw width advancement)
+	0.0833333 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 180 (0xb4)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.332031,0.53125),(0.344727,0.601563)] // Texture coord bounds
+	0.152778 // Font 'A' spacing (pre-draw advancement)
+	0.180556 // Font 'B' spacing (draw width advancement)
+	0.152778 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 181 (0xb5)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.360352,0.53125),(0.387695,0.601563)] // Texture coord bounds
+	0.0416667 // Font 'A' spacing (pre-draw advancement)
+	0.388889 // Font 'B' spacing (draw width advancement)
+	0.0277778 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 182 (0xb6)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.40332,0.53125),(0.425781,0.601563)] // Texture coord bounds
+	0.0555556 // Font 'A' spacing (pre-draw advancement)
+	0.319444 // Font 'B' spacing (draw width advancement)
+	0.0555556 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 183 (0xb7)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.441406,0.53125),(0.452148,0.601563)] // Texture coord bounds
+	0.0833333 // Font 'A' spacing (pre-draw advancement)
+	0.152778 // Font 'B' spacing (draw width advancement)
+	0.0694444 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 184 (0xb8)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.467773,0.53125),(0.479492,0.601563)] // Texture coord bounds
+	0.166667 // Font 'A' spacing (pre-draw advancement)
+	0.166667 // Font 'B' spacing (draw width advancement)
+	0.152778 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 185 (0xb9)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.495117,0.53125),(0.505859,0.601563)] // Texture coord bounds
+	0.0972222 // Font 'A' spacing (pre-draw advancement)
+	0.152778 // Font 'B' spacing (draw width advancement)
+	0.125 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 186 (0xba)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.521484,0.53125),(0.540039,0.601563)] // Texture coord bounds
+	0.0416667 // Font 'A' spacing (pre-draw advancement)
+	0.263889 // Font 'B' spacing (draw width advancement)
+	0.0555556 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 187 (0xbb)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.555664,0.53125),(0.582031,0.601563)] // Texture coord bounds
+	0.0555556 // Font 'A' spacing (pre-draw advancement)
+	0.375 // Font 'B' spacing (draw width advancement)
+	0.0555556 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 188 (0xbc)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.597656,0.53125),(0.639648,0.601563)] // Texture coord bounds
+	0.0416667 // Font 'A' spacing (pre-draw advancement)
+	0.597222 // Font 'B' spacing (draw width advancement)
+	0.0277778 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 189 (0xbd)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.655273,0.53125),(0.698242,0.601563)] // Texture coord bounds
+	0.0416667 // Font 'A' spacing (pre-draw advancement)
+	0.611111 // Font 'B' spacing (draw width advancement)
+	0.0138889 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 190 (0xbe)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.713867,0.53125),(0.757813,0.601563)] // Texture coord bounds
+	0.0277778 // Font 'A' spacing (pre-draw advancement)
+	0.625 // Font 'B' spacing (draw width advancement)
+	0.0138889 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 191 (0xbf)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.773438,0.53125),(0.793945,0.601563)] // Texture coord bounds
+	0.0416667 // Font 'A' spacing (pre-draw advancement)
+	0.291667 // Font 'B' spacing (draw width advancement)
+	0.0277778 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 192 (0xc0)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.80957,0.53125),(0.84668,0.601563)] // Texture coord bounds
+	0 // Font 'A' spacing (pre-draw advancement)
+	0.527778 // Font 'B' spacing (draw width advancement)
+	0 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 193 (0xc1)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.862305,0.53125),(0.899414,0.601563)] // Texture coord bounds
+	0 // Font 'A' spacing (pre-draw advancement)
+	0.527778 // Font 'B' spacing (draw width advancement)
+	0 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 194 (0xc2)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.915039,0.53125),(0.952148,0.601563)] // Texture coord bounds
+	0 // Font 'A' spacing (pre-draw advancement)
+	0.527778 // Font 'B' spacing (draw width advancement)
+	0 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 195 (0xc3)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.015625,0.617188),(0.0527344,0.6875)] // Texture coord bounds
+	0 // Font 'A' spacing (pre-draw advancement)
+	0.527778 // Font 'B' spacing (draw width advancement)
+	0 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 196 (0xc4)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.0683594,0.617188),(0.105469,0.6875)] // Texture coord bounds
+	0 // Font 'A' spacing (pre-draw advancement)
+	0.527778 // Font 'B' spacing (draw width advancement)
+	0 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 197 (0xc5)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.121094,0.617188),(0.157227,0.6875)] // Texture coord bounds
+	0.0138889 // Font 'A' spacing (pre-draw advancement)
+	0.513889 // Font 'B' spacing (draw width advancement)
+	0 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 198 (0xc6)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.172852,0.617188),(0.224609,0.6875)] // Texture coord bounds
+	0 // Font 'A' spacing (pre-draw advancement)
+	0.736111 // Font 'B' spacing (draw width advancement)
+	0.0277778 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 199 (0xc7)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.240234,0.617188),(0.271484,0.6875)] // Texture coord bounds
+	0.0277778 // Font 'A' spacing (pre-draw advancement)
+	0.444444 // Font 'B' spacing (draw width advancement)
+	0.0277778 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 200 (0xc8)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.287109,0.617188),(0.313477,0.6875)] // Texture coord bounds
+	0.0555556 // Font 'A' spacing (pre-draw advancement)
+	0.375 // Font 'B' spacing (draw width advancement)
+	0.0416667 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 201 (0xc9)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.329102,0.617188),(0.355469,0.6875)] // Texture coord bounds
+	0.0555556 // Font 'A' spacing (pre-draw advancement)
+	0.375 // Font 'B' spacing (draw width advancement)
+	0.0416667 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 202 (0xca)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.371094,0.617188),(0.397461,0.6875)] // Texture coord bounds
+	0.0555556 // Font 'A' spacing (pre-draw advancement)
+	0.375 // Font 'B' spacing (draw width advancement)
+	0.0416667 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 203 (0xcb)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.413086,0.617188),(0.439453,0.6875)] // Texture coord bounds
+	0.0555556 // Font 'A' spacing (pre-draw advancement)
+	0.375 // Font 'B' spacing (draw width advancement)
+	0.0416667 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 204 (0xcc)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.455078,0.617188),(0.46875,0.6875)] // Texture coord bounds
+	0 // Font 'A' spacing (pre-draw advancement)
+	0.194444 // Font 'B' spacing (draw width advancement)
+	0.0555556 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 205 (0xcd)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.484375,0.617188),(0.498047,0.6875)] // Texture coord bounds
+	0.0555556 // Font 'A' spacing (pre-draw advancement)
+	0.194444 // Font 'B' spacing (draw width advancement)
+	0 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 206 (0xce)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.513672,0.617188),(0.537109,0.6875)] // Texture coord bounds
+	-0.0416667 // Font 'A' spacing (pre-draw advancement)
+	0.333333 // Font 'B' spacing (draw width advancement)
+	-0.0277778 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 207 (0xcf)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.552734,0.617188),(0.578125,0.6875)] // Texture coord bounds
+	-0.0555556 // Font 'A' spacing (pre-draw advancement)
+	0.361111 // Font 'B' spacing (draw width advancement)
+	-0.0416667 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 208 (0xd0)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.59375,0.617188),(0.62793,0.6875)] // Texture coord bounds
+	0 // Font 'A' spacing (pre-draw advancement)
+	0.486111 // Font 'B' spacing (draw width advancement)
+	0.0416667 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 209 (0xd1)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.643555,0.617188),(0.674805,0.6875)] // Texture coord bounds
+	0.0555556 // Font 'A' spacing (pre-draw advancement)
+	0.444444 // Font 'B' spacing (draw width advancement)
+	0.0555556 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 210 (0xd2)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.69043,0.617188),(0.727539,0.6875)] // Texture coord bounds
+	0.0277778 // Font 'A' spacing (pre-draw advancement)
+	0.527778 // Font 'B' spacing (draw width advancement)
+	0.0277778 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 211 (0xd3)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.743164,0.617188),(0.780273,0.6875)] // Texture coord bounds
+	0.0277778 // Font 'A' spacing (pre-draw advancement)
+	0.527778 // Font 'B' spacing (draw width advancement)
+	0.0277778 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 212 (0xd4)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.795898,0.617188),(0.833008,0.6875)] // Texture coord bounds
+	0.0277778 // Font 'A' spacing (pre-draw advancement)
+	0.527778 // Font 'B' spacing (draw width advancement)
+	0.0277778 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 213 (0xd5)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.848633,0.617188),(0.885742,0.6875)] // Texture coord bounds
+	0.0277778 // Font 'A' spacing (pre-draw advancement)
+	0.527778 // Font 'B' spacing (draw width advancement)
+	0.0277778 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 214 (0xd6)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.901367,0.617188),(0.938477,0.6875)] // Texture coord bounds
+	0.0277778 // Font 'A' spacing (pre-draw advancement)
+	0.527778 // Font 'B' spacing (draw width advancement)
+	0.0277778 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 215 (0xd7)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.954102,0.617188),(0.980469,0.6875)] // Texture coord bounds
+	0.0555556 // Font 'A' spacing (pre-draw advancement)
+	0.375 // Font 'B' spacing (draw width advancement)
+	0.0555556 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 216 (0xd8)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.015625,0.703125),(0.0527344,0.773438)] // Texture coord bounds
+	0.0277778 // Font 'A' spacing (pre-draw advancement)
+	0.527778 // Font 'B' spacing (draw width advancement)
+	0.0138889 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 217 (0xd9)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.0683594,0.703125),(0.0986328,0.773438)] // Texture coord bounds
+	0.0555556 // Font 'A' spacing (pre-draw advancement)
+	0.430556 // Font 'B' spacing (draw width advancement)
+	0.0694444 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 218 (0xda)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.114258,0.703125),(0.144531,0.773438)] // Texture coord bounds
+	0.0555556 // Font 'A' spacing (pre-draw advancement)
+	0.430556 // Font 'B' spacing (draw width advancement)
+	0.0694444 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 219 (0xdb)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.160156,0.703125),(0.19043,0.773438)] // Texture coord bounds
+	0.0555556 // Font 'A' spacing (pre-draw advancement)
+	0.430556 // Font 'B' spacing (draw width advancement)
+	0.0694444 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 220 (0xdc)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.206055,0.703125),(0.236328,0.773438)] // Texture coord bounds
+	0.0555556 // Font 'A' spacing (pre-draw advancement)
+	0.430556 // Font 'B' spacing (draw width advancement)
+	0.0694444 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 221 (0xdd)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.251953,0.703125),(0.287109,0.773438)] // Texture coord bounds
+	0 // Font 'A' spacing (pre-draw advancement)
+	0.5 // Font 'B' spacing (draw width advancement)
+	0.0138889 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 222 (0xde)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.302734,0.703125),(0.330078,0.773438)] // Texture coord bounds
+	0.0416667 // Font 'A' spacing (pre-draw advancement)
+	0.388889 // Font 'B' spacing (draw width advancement)
+	0.0277778 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 223 (0xdf)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.345703,0.703125),(0.373047,0.773438)] // Texture coord bounds
+	0.0416667 // Font 'A' spacing (pre-draw advancement)
+	0.388889 // Font 'B' spacing (draw width advancement)
+	0.0277778 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 224 (0xe0)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.388672,0.703125),(0.416016,0.773438)] // Texture coord bounds
+	0.0277778 // Font 'A' spacing (pre-draw advancement)
+	0.388889 // Font 'B' spacing (draw width advancement)
+	0.0277778 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 225 (0xe1)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.431641,0.703125),(0.458984,0.773438)] // Texture coord bounds
+	0.0277778 // Font 'A' spacing (pre-draw advancement)
+	0.388889 // Font 'B' spacing (draw width advancement)
+	0.0277778 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 226 (0xe2)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.474609,0.703125),(0.501953,0.773438)] // Texture coord bounds
+	0.0277778 // Font 'A' spacing (pre-draw advancement)
+	0.388889 // Font 'B' spacing (draw width advancement)
+	0.0277778 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 227 (0xe3)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.517578,0.703125),(0.544922,0.773438)] // Texture coord bounds
+	0.0277778 // Font 'A' spacing (pre-draw advancement)
+	0.388889 // Font 'B' spacing (draw width advancement)
+	0.0277778 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 228 (0xe4)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.560547,0.703125),(0.587891,0.773438)] // Texture coord bounds
+	0.0277778 // Font 'A' spacing (pre-draw advancement)
+	0.388889 // Font 'B' spacing (draw width advancement)
+	0.0277778 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 229 (0xe5)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.603516,0.703125),(0.630859,0.773438)] // Texture coord bounds
+	0.0277778 // Font 'A' spacing (pre-draw advancement)
+	0.388889 // Font 'B' spacing (draw width advancement)
+	0.0277778 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 230 (0xe6)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.646484,0.703125),(0.694336,0.773438)] // Texture coord bounds
+	0.0138889 // Font 'A' spacing (pre-draw advancement)
+	0.680556 // Font 'B' spacing (draw width advancement)
+	0.0138889 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 231 (0xe7)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.709961,0.703125),(0.736328,0.773438)] // Texture coord bounds
+	0.0277778 // Font 'A' spacing (pre-draw advancement)
+	0.375 // Font 'B' spacing (draw width advancement)
+	0.0277778 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 232 (0xe8)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.751953,0.703125),(0.78125,0.773438)] // Texture coord bounds
+	0.0277778 // Font 'A' spacing (pre-draw advancement)
+	0.416667 // Font 'B' spacing (draw width advancement)
+	0.0277778 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 233 (0xe9)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.796875,0.703125),(0.826172,0.773438)] // Texture coord bounds
+	0.0277778 // Font 'A' spacing (pre-draw advancement)
+	0.416667 // Font 'B' spacing (draw width advancement)
+	0.0277778 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 234 (0xea)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.841797,0.703125),(0.871094,0.773438)] // Texture coord bounds
+	0.0277778 // Font 'A' spacing (pre-draw advancement)
+	0.416667 // Font 'B' spacing (draw width advancement)
+	0.0277778 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 235 (0xeb)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.886719,0.703125),(0.916016,0.773438)] // Texture coord bounds
+	0.0277778 // Font 'A' spacing (pre-draw advancement)
+	0.416667 // Font 'B' spacing (draw width advancement)
+	0.0277778 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 236 (0xec)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.931641,0.703125),(0.945313,0.773438)] // Texture coord bounds
+	0 // Font 'A' spacing (pre-draw advancement)
+	0.194444 // Font 'B' spacing (draw width advancement)
+	0.0555556 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 237 (0xed)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.960938,0.703125),(0.976563,0.773438)] // Texture coord bounds
+	0.0277778 // Font 'A' spacing (pre-draw advancement)
+	0.222222 // Font 'B' spacing (draw width advancement)
+	0 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 238 (0xee)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.015625,0.789063),(0.0390625,0.859375)] // Texture coord bounds
+	-0.0138889 // Font 'A' spacing (pre-draw advancement)
+	0.333333 // Font 'B' spacing (draw width advancement)
+	-0.0416667 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 239 (0xef)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.0546875,0.789063),(0.0800781,0.859375)] // Texture coord bounds
+	-0.0277778 // Font 'A' spacing (pre-draw advancement)
+	0.361111 // Font 'B' spacing (draw width advancement)
+	-0.0555556 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 240 (0xf0)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.0957031,0.789063),(0.125,0.859375)] // Texture coord bounds
+	0.0277778 // Font 'A' spacing (pre-draw advancement)
+	0.416667 // Font 'B' spacing (draw width advancement)
+	0.0277778 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 241 (0xf1)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.140625,0.789063),(0.167969,0.859375)] // Texture coord bounds
+	0.0555556 // Font 'A' spacing (pre-draw advancement)
+	0.388889 // Font 'B' spacing (draw width advancement)
+	0.0416667 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 242 (0xf2)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.183594,0.789063),(0.212891,0.859375)] // Texture coord bounds
+	0.0277778 // Font 'A' spacing (pre-draw advancement)
+	0.416667 // Font 'B' spacing (draw width advancement)
+	0.0277778 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 243 (0xf3)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.228516,0.789063),(0.257813,0.859375)] // Texture coord bounds
+	0.0277778 // Font 'A' spacing (pre-draw advancement)
+	0.416667 // Font 'B' spacing (draw width advancement)
+	0.0277778 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 244 (0xf4)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.273438,0.789063),(0.302734,0.859375)] // Texture coord bounds
+	0.0277778 // Font 'A' spacing (pre-draw advancement)
+	0.416667 // Font 'B' spacing (draw width advancement)
+	0.0277778 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 245 (0xf5)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.318359,0.789063),(0.347656,0.859375)] // Texture coord bounds
+	0.0277778 // Font 'A' spacing (pre-draw advancement)
+	0.416667 // Font 'B' spacing (draw width advancement)
+	0.0277778 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 246 (0xf6)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.363281,0.789063),(0.392578,0.859375)] // Texture coord bounds
+	0.0277778 // Font 'A' spacing (pre-draw advancement)
+	0.416667 // Font 'B' spacing (draw width advancement)
+	0.0277778 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 247 (0xf7)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.408203,0.789063),(0.433594,0.859375)] // Texture coord bounds
+	0.0694444 // Font 'A' spacing (pre-draw advancement)
+	0.361111 // Font 'B' spacing (draw width advancement)
+	0.0555556 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 248 (0xf8)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.449219,0.789063),(0.478516,0.859375)] // Texture coord bounds
+	0.0277778 // Font 'A' spacing (pre-draw advancement)
+	0.416667 // Font 'B' spacing (draw width advancement)
+	0.0277778 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 249 (0xf9)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.494141,0.789063),(0.521484,0.859375)] // Texture coord bounds
+	0.0555556 // Font 'A' spacing (pre-draw advancement)
+	0.388889 // Font 'B' spacing (draw width advancement)
+	0.0416667 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 250 (0xfa)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.537109,0.789063),(0.564453,0.859375)] // Texture coord bounds
+	0.0555556 // Font 'A' spacing (pre-draw advancement)
+	0.388889 // Font 'B' spacing (draw width advancement)
+	0.0416667 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 251 (0xfb)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.580078,0.789063),(0.607422,0.859375)] // Texture coord bounds
+	0.0555556 // Font 'A' spacing (pre-draw advancement)
+	0.388889 // Font 'B' spacing (draw width advancement)
+	0.0416667 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 252 (0xfc)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.623047,0.789063),(0.650391,0.859375)] // Texture coord bounds
+	0.0555556 // Font 'A' spacing (pre-draw advancement)
+	0.388889 // Font 'B' spacing (draw width advancement)
+	0.0416667 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 253 (0xfd)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.666016,0.789063),(0.697266,0.859375)] // Texture coord bounds
+	0 // Font 'A' spacing (pre-draw advancement)
+	0.444444 // Font 'B' spacing (draw width advancement)
+	0 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 254 (0xfe)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.712891,0.789063),(0.741211,0.859375)] // Texture coord bounds
+	0.0416667 // Font 'A' spacing (pre-draw advancement)
+	0.402778 // Font 'B' spacing (draw width advancement)
+	0.0416667 // Font 'C' spacing (post-draw advancement)
+}
+
+// Ascii char 255 (0xff)
+{
+	true // "true" if we have a glyph for this character code
+	0 // Texture sheet #
+	AABB2[(0.756836,0.789063),(0.788086,0.859375)] // Texture coord bounds
+	0 // Font 'A' spacing (pre-draw advancement)
+	0.444444 // Font 'B' spacing (draw width advancement)
+	0 // Font 'C' spacing (post-draw advancement)
+}

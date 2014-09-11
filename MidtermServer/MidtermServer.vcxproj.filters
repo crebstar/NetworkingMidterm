@@ -1,0 +1,646 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="EngineCode">
+      <UniqueIdentifier>{27e02b44-4bb0-48c4-811a-79379177e425}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ServerCode\ConnectedUDPClient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerCode\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerCode\UDPServer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\AABB3D.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\Alarm.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\AsyncJob.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\BitmapFont.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\CB3DSMaxImporter.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\CBMemoryManager.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\CBMesh.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\CBNode.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\CBRenderer.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\CBSkinnedMesh.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\CBSkinnedTriangleBatch.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\CBStringHelper.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\CBTriangleBatch.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\Clock.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\CollisionHelper.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\CommandLet.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\CommandLineArgs.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\CommandPrompt.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\Console.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\ConsoleCommandArg.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\DebugAABB.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\DebugArrow.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\DebugLine.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\DebugPoint.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\DebugShapeDefinition.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\DebugShapeRenderer.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\DebugSphere.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\Disk2D.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\EngineErrorManager.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\EngineProfiler.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\EngineSettings.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\Entity.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\EntityMesh.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\EventSubscriberBase.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\EventSystem.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\EventSystemSubscriber.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\FMODSound.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\Fog.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\FontManager.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\FrameBufferObject.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\GameDirector.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\Geometry3D.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\Glyph.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\guicon.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\HashBufferJob.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\InputHandler.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\JobManager.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\Light.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\LoadFileJob.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\Material.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\Matrix44.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\MatrixStack.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\MemoryMacros.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\NamedProperties.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\NamedProperty.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\Node.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\OpenGLRenderer.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\OpenGLShader.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\OpenGLShaderError.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\OpenGLShaderManager.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\OpenGLShaderProgram.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\OperatorNewDelete.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\Particle.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\Plane3D.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\ProfileSection.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\pugixml.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\ReverseBufferJob.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\SaveFileJob.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\Size.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\Sphere3D.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\SphereShape.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\Sprite.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\SpriteAnimation.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\SpriteAnimationDefinition.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\stb_image.c">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\TextRenderer.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\Texture.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\TextureAtlas.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\TextureAtlasManager.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\TextureManager.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\TimeSystem.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\TimeUtil.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\TypedEventSubscriber.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\TypedNamedProperty.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\Vector2.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\ViewFrustum.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\WorkerThread.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\XBOXController.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\XMLDocument.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\XMLNode.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBEngine\EngineCode\XMLParser.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ServerCode\ConnectedUDPClient.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerCode\CS6Packet.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerCode\UDPServer.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\AABB.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\AABB3D.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\Alarm.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\AsyncJob.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\BitmapFont.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\CB3DSMaxImporter.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\CBMemoryManager.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\CBMesh.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\CBNode.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\CBRenderer.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\CBSkinnedMesh.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\CBSkinnedTriangleBatch.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\CBStringHelper.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\CBTriangleBatch.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\Clock.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\CommandFunctions.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\CommandLet.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\CommandLineArgs.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\CommandPrompt.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\Console.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\ConsoleCommandArg.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\DebugAABB.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\DebugArrow.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\DebugLine.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\DebugPoint.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\DebugShape.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\DebugShapeDefinition.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\DebugShapeRenderer.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\DebugSphere.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\Disk2D.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\EngineCommon.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\EngineErrorManager.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\EngineMacros.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\EngineProfiler.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\EngineSettings.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\Entity.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\EntityMesh.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\EulerAngles.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\EventSubscriberBase.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\EventSystem.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\EventSystemSubscriber.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\fmod.h">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\fmod.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\fmod_codec.h">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\fmod_dsp.h">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\fmod_errors.h">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\fmod_memoryinfo.h">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\fmod_output.h">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\FMODSound.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\Fog.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\FontManager.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\FrameBufferObject.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\GameDirector.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\GameWorld.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\geometry.h">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\Geometry3D.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\glext.h">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\Glyph.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\guicon.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\HashBufferJob.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\InputHandler.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\IntVector2.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\JobManager.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\Light.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\LoadFileJob.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\Material.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\MathUtil.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\Matrix44.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\MatrixStack.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\MemoryMacros.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\NamedProperties.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\NamedProperty.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\Node.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\OpenGLRenderer.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\OpenGLShader.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\OpenGLShaderError.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\OpenGLShaderManager.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\OpenGLShaderProgram.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\OperatorNewDelete.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\Particle.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\Plane3D.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\ProfileSection.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\PromptDelegate.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\pugiconfig.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\pugixml.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\ReverseBufferJob.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\SaveFileJob.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\Size.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\Sphere3D.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\SphereShape.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\Sprite.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\SpriteAnimation.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\SpriteAnimationDefinition.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\TextRenderer.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\Texture.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\TextureAtlas.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\TextureAtlasManager.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\TextureManager.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\TimeSystem.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\TimeUtil.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\TypedEventSubscriber.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\TypedNamedProperty.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\Uniform.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\Vector2.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\Vector3D.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\Vector4.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\Vertex.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\ViewFrustum.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\WorkerThread.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\XBOXController.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\XMLDocument.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\XMLNode.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBEngine\EngineCode\XMLParser.hpp">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

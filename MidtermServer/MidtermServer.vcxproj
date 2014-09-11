@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\CBEngine\EngineCode\AABB3D.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\Alarm.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\AsyncJob.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\BitmapFont.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\CB3DSMaxImporter.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\CBMemoryManager.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\CBMesh.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\CBNode.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\CBRenderer.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\CBSkinnedMesh.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\CBSkinnedTriangleBatch.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\CBStringHelper.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\CBTriangleBatch.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\Clock.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\CollisionHelper.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\CommandLet.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\CommandLineArgs.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\CommandPrompt.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\Console.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\ConsoleCommandArg.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\DebugAABB.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\DebugArrow.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\DebugLine.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\DebugPoint.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\DebugShapeDefinition.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\DebugShapeRenderer.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\DebugSphere.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\Disk2D.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\EngineErrorManager.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\EngineProfiler.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\EngineSettings.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\Entity.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\EntityMesh.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\EventSubscriberBase.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\EventSystem.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\EventSystemSubscriber.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\FMODSound.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\Fog.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\FontManager.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\FrameBufferObject.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\GameDirector.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\Geometry3D.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\Glyph.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\guicon.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\HashBufferJob.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\InputHandler.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\JobManager.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\Light.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\LoadFileJob.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\Material.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\Matrix44.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\MatrixStack.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\MemoryMacros.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\NamedProperties.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\NamedProperty.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\Node.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\OpenGLRenderer.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\OpenGLShader.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\OpenGLShaderError.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\OpenGLShaderManager.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\OpenGLShaderProgram.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\OperatorNewDelete.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\Particle.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\Plane3D.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\ProfileSection.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\pugixml.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\ReverseBufferJob.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\SaveFileJob.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\Size.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\Sphere3D.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\SphereShape.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\Sprite.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\SpriteAnimation.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\SpriteAnimationDefinition.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\stb_image.c" />
+    <ClCompile Include="..\CBEngine\EngineCode\TextRenderer.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\Texture.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\TextureAtlas.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\TextureAtlasManager.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\TextureManager.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\TimeSystem.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\TimeUtil.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\TypedEventSubscriber.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\TypedNamedProperty.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\Vector2.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\ViewFrustum.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\WorkerThread.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\XBOXController.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\XMLDocument.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\XMLNode.cpp" />
+    <ClCompile Include="..\CBEngine\EngineCode\XMLParser.cpp" />
+    <ClCompile Include="ServerCode\ConnectedUDPClient.cpp" />
+    <ClCompile Include="ServerCode\main.cpp" />
+    <ClCompile Include="ServerCode\UDPServer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\CBEngine\EngineCode\AABB.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\AABB3D.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\Alarm.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\AsyncJob.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\BitmapFont.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\CB3DSMaxImporter.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\CBMemoryManager.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\CBMesh.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\CBNode.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\CBRenderer.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\CBSkinnedMesh.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\CBSkinnedTriangleBatch.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\CBStringHelper.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\CBTriangleBatch.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\Clock.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\CommandFunctions.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\CommandLet.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\CommandLineArgs.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\CommandPrompt.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\Console.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\ConsoleCommandArg.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\DebugAABB.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\DebugArrow.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\DebugLine.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\DebugPoint.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\DebugShape.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\DebugShapeDefinition.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\DebugShapeRenderer.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\DebugSphere.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\Disk2D.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\EngineCommon.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\EngineErrorManager.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\EngineMacros.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\EngineProfiler.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\EngineSettings.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\Entity.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\EntityMesh.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\EulerAngles.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\EventSubscriberBase.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\EventSystem.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\EventSystemSubscriber.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\fmod.h" />
+    <ClInclude Include="..\CBEngine\EngineCode\fmod.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\FMODSound.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\fmod_codec.h" />
+    <ClInclude Include="..\CBEngine\EngineCode\fmod_dsp.h" />
+    <ClInclude Include="..\CBEngine\EngineCode\fmod_errors.h" />
+    <ClInclude Include="..\CBEngine\EngineCode\fmod_memoryinfo.h" />
+    <ClInclude Include="..\CBEngine\EngineCode\fmod_output.h" />
+    <ClInclude Include="..\CBEngine\EngineCode\Fog.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\FontManager.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\FrameBufferObject.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\GameDirector.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\GameWorld.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\geometry.h" />
+    <ClInclude Include="..\CBEngine\EngineCode\Geometry3D.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\glext.h" />
+    <ClInclude Include="..\CBEngine\EngineCode\Glyph.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\guicon.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\HashBufferJob.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\InputHandler.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\IntVector2.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\JobManager.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\Light.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\LoadFileJob.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\Material.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\MathUtil.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\Matrix44.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\MatrixStack.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\MemoryMacros.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\NamedProperties.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\NamedProperty.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\Node.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\OpenGLRenderer.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\OpenGLShader.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\OpenGLShaderError.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\OpenGLShaderManager.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\OpenGLShaderProgram.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\OperatorNewDelete.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\Particle.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\Plane3D.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\ProfileSection.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\PromptDelegate.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\pugiconfig.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\pugixml.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\ReverseBufferJob.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\SaveFileJob.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\Size.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\Sphere3D.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\SphereShape.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\Sprite.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\SpriteAnimation.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\SpriteAnimationDefinition.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\TextRenderer.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\Texture.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\TextureAtlas.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\TextureAtlasManager.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\TextureManager.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\TimeSystem.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\TimeUtil.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\TypedEventSubscriber.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\TypedNamedProperty.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\Uniform.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\Vector2.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\Vector3D.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\Vector4.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\Vertex.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\ViewFrustum.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\WorkerThread.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\XBOXController.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\XMLDocument.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\XMLNode.hpp" />
+    <ClInclude Include="..\CBEngine\EngineCode\XMLParser.hpp" />
+    <ClInclude Include="ServerCode\ConnectedUDPClient.hpp" />
+    <ClInclude Include="ServerCode\CS6Packet.hpp" />
+    <ClInclude Include="ServerCode\UDPServer.hpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1BA34AD3-5F03-4818-8DE7-333BE962A36C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>MidtermServer</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
