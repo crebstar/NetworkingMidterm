@@ -312,9 +312,6 @@
     <ClInclude Include="GameCode\Camera2D.hpp">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="GameCode\CS6Packet.hpp">
-      <Filter>Source Files</Filter>
-    </ClInclude>
     <ClInclude Include="GameCode\FeedbackGame.hpp">
       <Filter>Source Files</Filter>
     </ClInclude>

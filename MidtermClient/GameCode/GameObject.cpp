@@ -20,7 +20,8 @@ GameObject::GameObject() {
 	m_position.x = 100.0f;
 	m_position.y = 100.0f;
 	m_orientationDegrees = 0.0f;
-	m_isFlag = false;
+	m_isIt = false;
+	m_isPlayer = false;
 	m_collisionDisk.radius = COLLISION_DISK_RADIUS;
 }
 
@@ -32,15 +33,6 @@ void GameObject::update( float deltaSeconds ) {
 
 
 void GameObject::updatePhysics( float deltaSeconds ) {
-
-	// This is no longer needed with an authoritative server
-	//m_currentVelocity.x = m_currentVelocity.x * MAX_VELOCITY_PER_SECOND;
-	//m_currentVelocity.y = m_currentVelocity.y * MAX_VELOCITY_PER_SECOND;
-
-	//m_position.x = m_position.x + ( m_currentVelocity.x * deltaSeconds );
-	//m_position.y = m_position.y + ( m_currentVelocity.y * deltaSeconds );
-
-	//m_desiredPosition = m_position;
 
 	m_currentVelocity.x = 0.0f;
 	m_currentVelocity.y = 0.0f;

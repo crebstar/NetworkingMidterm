@@ -62,6 +62,15 @@ struct MidtermPacket
 		UpdatePacket		updated;
 		TaggedPacket		tagged;
 	} data;
+
+	inline bool operator< ( const MidtermPacket& rhs ) {
+		
+		if ( this->m_packetNumber < rhs.m_packetNumber ) {
+			return true;
+		}
+
+		return false;
+	}
 };
 
 

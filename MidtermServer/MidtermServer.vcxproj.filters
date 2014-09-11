@@ -297,9 +297,6 @@
     <ClInclude Include="ServerCode\ConnectedUDPClient.hpp">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="ServerCode\CS6Packet.hpp">
-      <Filter>Source Files</Filter>
-    </ClInclude>
     <ClInclude Include="ServerCode\UDPServer.hpp">
       <Filter>Source Files</Filter>
     </ClInclude>

@@ -17,8 +17,7 @@
 #include "../../CBEngine/EngineCode/Vector2.hpp"
 
 #include "UDPServer.hpp"
-
-#include "CS6Packet.hpp"
+#include "../MidtermPacket.hpp"
 
 class ConnectedUDPClient {
 public:
@@ -29,6 +28,7 @@ public:
 
 	double												m_timeStampSecondsForLastPacketReceived;
 
+	cbengine::Vector2									m_startingPos;
 	cbengine::Vector2									m_position;
 	cbengine::Vector2									m_velocity;
 	float												m_orientationDegrees;
@@ -41,7 +41,7 @@ public:
 	int													m_playerID;
 	bool												m_isIT;
 
-	std::map<int,CS6Packet>								m_reliablePacketsSentButNotAcked;
+	std::map<int,MidtermPacket>							m_reliablePacketsSentButNotAcked;
 
 protected:
 

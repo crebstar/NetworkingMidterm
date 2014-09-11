@@ -13,12 +13,12 @@
 #define WIN32_LEAN_AND_MEAN
 #include <windows.h>
 
-#include "CS6Packet.hpp"
-
+#include "../MidtermPacket.hpp"
 
 const float ARENA_WIDTH = 500.0f;
 const float ARENA_HEIGHT = 500.0f;
 
+const unsigned char NO_PLAYER_IS_IT = 0;
 
 const double DURATION_THRESHOLD_FOR_DISCONECT = 1000.0; // FOR TESTING
 const double TIME_DIF_SECONDS_FOR_USER_DISPLAY = 5.5;
@@ -38,6 +38,9 @@ public:
 	void run();
 
 protected:
+
+	// Gameplay
+	unsigned char	getPlayerIDForPlayerWhoIsIt();
 
 	SOCKET												m_listenSocket;
 
@@ -60,7 +63,7 @@ protected:
 private:
 
 	void convertIPAndPortToSingleString( char* ipAddress, int portNumber, std::string& out_combinedIPAndPort );
-	void updateOrCreateNewClient( const std::string& combinedIPAndPort, const sockaddr_in& clientAddress, const CS6Packet& playerData );
+	void updateOrCreateNewClient( const std::string& combinedIPAndPort, const sockaddr_in& clientAddress, const MidtermPacket& playerData );
 	void checkForExpiredClients();
 	void displayConnectedUsers();
 

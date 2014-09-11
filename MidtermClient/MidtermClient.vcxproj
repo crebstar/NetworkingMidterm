@@ -291,7 +291,6 @@
     <ClInclude Include="..\CBEngine\EngineCode\XMLParser.hpp" />
     <ClInclude Include="GameCode\Camera.hpp" />
     <ClInclude Include="GameCode\Camera2D.hpp" />
-    <ClInclude Include="GameCode\CS6Packet.hpp" />
     <ClInclude Include="GameCode\FeedbackGame.hpp" />
     <ClInclude Include="GameCode\FeedbackWorld.hpp" />
     <ClInclude Include="GameCode\GameConstants.hpp" />

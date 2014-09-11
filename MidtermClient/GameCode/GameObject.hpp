@@ -35,7 +35,9 @@ public:
 
 	cbengine::Size				m_objectSize;
 	int							m_playerID;
-	bool						m_isFlag;
+	bool						m_isIt;
+	bool						m_isPlayer;
+	bool						m_updateProcessedForFrame;
 
 	void increaseOrientationDegrees( float amountToIncrease );
 

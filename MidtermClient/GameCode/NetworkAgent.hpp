@@ -3,6 +3,8 @@
 #pragma once
 
 #include <string>
+#include <map>
+#include <set>
 
 #include "../../CBEngine/EngineCode/EngineMacros.hpp"
 
@@ -15,7 +17,7 @@
 #include <windows.h> // In future abstract this out to engine code and remove windows dependency
 
 #include "FeedbackWorld.hpp"
-#include "CS6Packet.hpp"
+#include "MidtermPacket.hpp"
 
 const float THRESHOLD_FOR_CONNECTION_RERQUEST = 1.0f;
 
@@ -31,8 +33,9 @@ public:
 	void establishConnectionToServer();
 	void establishConnectionToNewServer( const std::string& serverIPAddress, const std::string& serverPortNumber );
 
-	bool requestToJoinServer( float deltaSeconds, CS6Packet& out_resetPacketReceived );
-	void sendPlayerDataPacketToServer( const CS6Packet& playerPacket );
+	bool requestToJoinServer( float deltaSeconds, MidtermPacket& out_resetPacketReceived );
+	void sendPlayerDataPacketToServer( const MidtermPacket& playerPacket );
+	bool getOrderedPacketsForEachUniqueID( std::map<int,std::set<MidtermPacket>>& out_orderedPackets );
 
 protected:
 

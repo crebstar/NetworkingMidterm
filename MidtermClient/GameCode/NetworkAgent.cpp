@@ -116,27 +116,59 @@ void NetworkAgent::establishConnectionToNewServer( const std::string& serverIPAd
 }
 
 
-void NetworkAgent::sendPlayerDataPacketToServer( const CS6Packet& playerPacket ) {
+void NetworkAgent::sendPlayerDataPacketToServer( const MidtermPacket& playerPacket ) {
 
 	if ( m_connectionIsActive ) {
 
 		// Keeping this around for sendto ref
-		/*
 		int wsResult = 0;
-		wsResult = sendto( m_serverSocket, (char*) &playerPacket, sizeof( CS6Packet ), 0, (sockaddr*) &m_serverAddress, m_serverAddressLength ); // For UDP use sendTo
+		wsResult = sendto( m_serverSocket, (char*) &playerPacket, sizeof( MidtermPacket ), 0, (sockaddr*) &m_serverAddress, m_serverAddressLength ); // For UDP use sendTo
 
 		if ( wsResult == SOCKET_ERROR ) {
 
 			printf( "sendto failed with error: %d\n", WSAGetLastError() );
 		
 		}
-		*/
-
 	} 
 }
 
 
-bool NetworkAgent::requestToJoinServer( float deltaSeconds, CS6Packet& out_resetPacketReceived ) {
+bool NetworkAgent::getOrderedPacketsForEachUniqueID( std::map<int,std::set<MidtermPacket>>& out_orderedPackets ) {
+
+	bool packetsWereReceived = false;
+
+	int winSockResult = 0;
+	sockaddr_in serverAddress;
+	int sizeOfServeraddress = sizeof( serverAddress );
+
+	do {
+
+		MidtermPacket packetReceived;
+		winSockResult = recvfrom( m_serverSocket, (char*) &packetReceived, sizeof( MidtermPacket ), 0, (sockaddr*) &serverAddress, &sizeOfServeraddress );
+
+		std::map<int,std::set<MidtermPacket>>::iterator itOrd = out_orderedPackets.find( packetReceived.m_playerID );
+		if ( itOrd != out_orderedPackets.end() ) {
+
+			std::set<MidtermPacket>& orderedPacketsSet = itOrd->second;
+			orderedPacketsSet.insert( packetReceived );
+			packetsWereReceived = true;
+
+		} else {
+
+			std::set<MidtermPacket> orderedPacketSet;
+			orderedPacketSet.insert( packetReceived );
+			out_orderedPackets.insert( std::pair<int,std::set<MidtermPacket>>( packetReceived.m_playerID, orderedPacketSet ) );
+			packetsWereReceived = true;
+		}
+
+	} while ( winSockResult > 0 );
+	
+
+	return packetsWereReceived;
+}
+
+
+bool NetworkAgent::requestToJoinServer( float deltaSeconds, MidtermPacket& out_resetPacketReceived ) {
 
 	static float durationSincePacketSent = deltaSeconds;
 	static bool bPacketToJoinSent = false;
@@ -151,13 +183,19 @@ bool NetworkAgent::requestToJoinServer( float deltaSeconds, CS6Packet& out_reset
 	if ( !bPacketToJoinSent ) {
 
 		// Create join packet ( likely an Ack )
+		MidtermPacket packetToJoin;
+		packetToJoin.m_packetType = TYPE_Acknowledge;
+		packetToJoin.m_packetNumber = 0; // Zero means don't care
+		packetToJoin.m_playerID = 0;
+		packetToJoin.m_timestamp = cbutil::getCurrentTimeSeconds();
+		
+		packetToJoin.data.acknowledged.m_packetNumber = 0;
+		packetToJoin.data.acknowledged.m_packetType = TYPE_Acknowledge;
 
-		/*
-		Keeping this around just for sendto reference
 		int wsResult = 0;
-		wsResult = sendto( m_serverSocket, (char*) &joinPacket, sizeof( CS6Packet ), 0, (sockaddr*) &m_serverAddress, m_serverAddressLength ); 
+		wsResult = sendto( m_serverSocket, (char*) &packetToJoin, sizeof( MidtermPacket ), 0, (sockaddr*) &m_serverAddress, m_serverAddressLength ); 
 
-		if  (wsResult == SOCKET_ERROR ) {
+		if  ( wsResult == SOCKET_ERROR ) {
 
 			printf( "sendto failed with error: %d\n", WSAGetLastError() );
 			bPacketToJoinSent = false;
@@ -167,8 +205,7 @@ bool NetworkAgent::requestToJoinServer( float deltaSeconds, CS6Packet& out_reset
 			bPacketToJoinSent = true;
 			durationSincePacketSent = 0.0f;
 		}
-		*/
-
+		
 	} else {
 
 		durationSincePacketSent += deltaSeconds;
@@ -177,16 +214,22 @@ bool NetworkAgent::requestToJoinServer( float deltaSeconds, CS6Packet& out_reset
 		sockaddr_in serverAddress;
 		int sizeOfServeraddress = sizeof( serverAddress );
 
-		winSockResult = recvfrom( m_serverSocket, (char*) &out_resetPacketReceived, sizeof( CS6Packet ), 0, (sockaddr*) &serverAddress, &sizeOfServeraddress );
+		winSockResult = recvfrom( m_serverSocket, (char*) &out_resetPacketReceived, sizeof( MidtermPacket ), 0, (sockaddr*) &serverAddress, &sizeOfServeraddress );
 
 		if ( winSockResult > 0 ) {
 
-			
 			// Send confirmation packet ( Ack ) if the packet received is the correct one ( usually reset )
-			// 
+			MidtermPacket ackPacketForJoin;
+			ackPacketForJoin.m_packetType = TYPE_Acknowledge;
+			ackPacketForJoin.m_packetNumber = out_resetPacketReceived.m_packetNumber;
+			ackPacketForJoin.m_playerID = 0;
+			ackPacketForJoin.m_timestamp = cbutil::getCurrentTimeSeconds();
 
-			//int wsResult = 0;
-			//wsResult = sendto( m_serverSocket, (char*) &ackPacket, sizeof( CS6Packet ), 0, (sockaddr*) &m_serverAddress, m_serverAddressLength ); 
+			ackPacketForJoin.data.acknowledged.m_packetNumber = out_resetPacketReceived.m_packetNumber;
+			ackPacketForJoin.data.acknowledged.m_packetType = out_resetPacketReceived.m_packetType;
+
+			int wsResult = 0;
+			wsResult = sendto( m_serverSocket, (char*) &ackPacketForJoin, sizeof( MidtermPacket ), 0, (sockaddr*) &m_serverAddress, m_serverAddressLength ); 
 
 			return true;
 			

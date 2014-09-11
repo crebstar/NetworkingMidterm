@@ -52,8 +52,10 @@ void FeedbackWorld::update( float deltaSeconds ) {
 		computePlayerDesiredPosition( deltaSeconds );
 
 		// Send data to network ... Like desired position / velocity of player
+		sendPlayerUpdateDataToServer( deltaSeconds );
 
 		// Collect data from network
+		collectPacketDataFromServer( deltaSeconds );
 
 		m_player.update( deltaSeconds );
 
@@ -66,27 +68,154 @@ void FeedbackWorld::update( float deltaSeconds ) {
 	} else if ( m_gameState == GAME_STATE_WAITING_FOR_SERVER ) {
 
 		attemptToConnectToServer( deltaSeconds );
-
 	}
-	
 }
 
 
-void FeedbackWorld::attemptToConnectToServer( float deltaSeconds ) {
+void FeedbackWorld::collectPacketDataFromServer( float deltaSeconds ) {
+
+	resetPlayerCache();
 
 	cbengine::GameDirector* sharedGameDirector = cbengine::GameDirector::sharedDirector();
-
 	FeedbackGame* fbGame = dynamic_cast<FeedbackGame*>( sharedGameDirector->getCurrentWorld() );
 
 	if ( fbGame != nullptr ) {
 
 		NetworkAgent* nwAgent = fbGame->getCurrentNetworkAgent();
 		if ( nwAgent != nullptr ) {
-			// Make connection packet and connect to server
-			// Wait for reset packet
+
+			std::map<int,std::set<MidtermPacket>> orderedPackets;
+			bool packetsWereReceived = nwAgent->getOrderedPacketsForEachUniqueID( orderedPackets );
+			if ( packetsWereReceived ) {
+
+				std::map<int,std::set<MidtermPacket>>::iterator itOrd;
+				for ( itOrd = orderedPackets.begin(); itOrd != orderedPackets.end(); ++itOrd ) {
+
+					GameObject* gamePlayerRecPacket = nullptr;
+					int playerID = itOrd->first;
+					if ( playerID == m_player.m_playerID ) {
+
+						gamePlayerRecPacket = &m_player;
+
+					} else {
+
+						for ( int i = 0; i < m_otherPlayers.size(); ++i ) {
+
+							GameObject* playerToCheck = m_otherPlayers[i];
+							if ( playerToCheck->m_playerID == playerID ) {
+
+								gamePlayerRecPacket = m_otherPlayers[i];
+							}
+						}
+					}
+
+					std::set<MidtermPacket>& orderedPacketSet = itOrd->second;
+
+					while ( !orderedPacketSet.empty() ) {
+
+						std::set<MidtermPacket>::iterator itPack;
+						itPack = orderedPacketSet.begin();
+						const MidtermPacket& packetRec = *(itPack);
+
+						if ( gamePlayerRecPacket == nullptr ) {
+							// New Player
+
+							GameObject* newOtherPlayer = new GameObject;
+							newOtherPlayer->m_playerID = packetRec.m_playerID;
+							newOtherPlayer->m_isPlayer = false;
+							
+							m_otherPlayers.push_back( newOtherPlayer );
+
+							gamePlayerRecPacket = newOtherPlayer;
+						}
+
+						if ( packetRec.m_packetType == TYPE_Update ) {
+
+							
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+void FeedbackWorld::resetPlayerCache() {
+
+	m_player.m_updateProcessedForFrame = false;
+	for ( int i = 0; i < m_otherPlayers.size(); ++i ) {
+
+		GameObject* otherPlayer = m_otherPlayers[i];
+		otherPlayer->m_updateProcessedForFrame = false;
+	}
+}
+
+
+void FeedbackWorld::sendPlayerUpdateDataToServer( float deltaSeconds ) {
+
+	cbengine::GameDirector* sharedGameDirector = cbengine::GameDirector::sharedDirector();
+	FeedbackGame* fbGame = dynamic_cast<FeedbackGame*>( sharedGameDirector->getCurrentWorld() );
+
+	if ( fbGame != nullptr ) {
+
+		NetworkAgent* nwAgent = fbGame->getCurrentNetworkAgent();
+		if ( nwAgent != nullptr ) {
+
+			MidtermPacket playerUpdatePacket;
+			playerUpdatePacket.m_packetType = TYPE_Update;
+			playerUpdatePacket.m_playerID = m_player.m_playerID;
+			playerUpdatePacket.m_packetNumber = 0; // Zero means don't care
+			playerUpdatePacket.m_timestamp = cbutil::getCurrentTimeSeconds();
+	
+			playerUpdatePacket.data.updated.m_xPosition = m_player.m_position.x;
+			playerUpdatePacket.data.updated.m_yPosition = m_player.m_position.y;
+			playerUpdatePacket.data.updated.m_xVelocity = m_player.m_currentVelocity.x;
+			playerUpdatePacket.data.updated.m_yVelocity = m_player.m_currentVelocity.y;
+			playerUpdatePacket.data.updated.m_yawDegrees = m_player.m_orientationDegrees;
+
+			nwAgent->sendPlayerDataPacketToServer( playerUpdatePacket );
+		}
+	}
+}
+
+
+void FeedbackWorld::attemptToConnectToServer( float deltaSeconds ) {
+
+	cbengine::GameDirector* sharedGameDirector = cbengine::GameDirector::sharedDirector();
+	FeedbackGame* fbGame = dynamic_cast<FeedbackGame*>( sharedGameDirector->getCurrentWorld() );
+
+	if ( fbGame != nullptr ) {
+
+		NetworkAgent* nwAgent = fbGame->getCurrentNetworkAgent();
+		if ( nwAgent != nullptr ) {
 			
-			// If connection was made... change to state running
-				//m_gameState = GAME_STATE_RUNNING;
+			MidtermPacket connectionResetPacket;
+			bool didFindConnection = nwAgent->requestToJoinServer( deltaSeconds, connectionResetPacket );
+
+			if ( didFindConnection ) {
+
+				m_player.m_position.x = connectionResetPacket.data.reset.m_playerXPos;
+				m_player.m_position.y = connectionResetPacket.data.reset.m_playerYPos;
+				m_player.m_desiredPosition = m_player.m_desiredPosition;
+				m_player.m_orientationDegrees = 0.0f;
+				m_player.m_playerColor.x = cbengine::rangeMapFloat( 0.0f, 255.0f, 0.0f, 1.0f, connectionResetPacket.data.reset.m_red );
+				m_player.m_playerColor.y = cbengine::rangeMapFloat( 0.0f, 255.0f, 0.0f, 1.0f, connectionResetPacket.data.reset.m_green );
+				m_player.m_playerColor.z = cbengine::rangeMapFloat( 0.0f, 255.0f, 0.0f, 1.0f, connectionResetPacket.data.reset.m_blue );
+				m_player.m_playerID = connectionResetPacket.m_playerID;
+				m_player.m_isPlayer = true;
+				
+				if ( m_player.m_playerID == connectionResetPacket.data.reset.m_playerIDWhoIsIt ) {
+
+					m_player.m_isIt = true;
+
+				} else {
+					m_player.m_isIt = false;
+
+				}
+
+				m_gameState = GAME_STATE_RUNNING;
+			}
 		}
 	}
 }

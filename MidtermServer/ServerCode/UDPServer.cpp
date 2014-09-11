@@ -12,6 +12,7 @@
 
 #include "ConnectedUDPClient.hpp"
 
+
 #include "../../CBEngine/EngineCode/TimeUtil.hpp"
 #include "../../CBEngine/EngineCode/MathUtil.hpp"
 
@@ -118,11 +119,11 @@ void UDPServer::run() {
 		checkForExpiredClients();
 		displayConnectedUsers();
 
-		CS6Packet clientPacketReceived;
+		MidtermPacket clientPacketReceived;
 
 		sockaddr_in clientSocketAddr;
 		int sizeOfResultAddress = sizeof( clientSocketAddr );
-		winSockResult = recvfrom( m_listenSocket, (char*) &clientPacketReceived, sizeof( CS6Packet ), 0, (sockaddr*) &clientSocketAddr, &sizeOfResultAddress );
+		winSockResult = recvfrom( m_listenSocket, (char*) &clientPacketReceived, sizeof( MidtermPacket ), 0, (sockaddr*) &clientSocketAddr, &sizeOfResultAddress );
 
 		if ( winSockResult > 0 ) {
 
@@ -151,31 +152,129 @@ void UDPServer::convertIPAndPortToSingleString( char* ipAddress, int portNumber,
 	itoa( portNumber, portNumAsCString, 10 );
 
 	out_combinedIPAndPort += ipAddress;
+	out_combinedIPAndPort += " ";
 	out_combinedIPAndPort += portNumAsCString;
 
 	delete[] portNumAsCString;
 }
 
 
-void UDPServer::updateOrCreateNewClient( const std::string& combinedIPAndPort, const sockaddr_in& clientAddress, const CS6Packet& playerData ) {
+void UDPServer::updateOrCreateNewClient( const std::string& combinedIPAndPort, const sockaddr_in& clientAddress, const MidtermPacket& playerData ) {
 
 	std::map<std::string,ConnectedUDPClient*>::iterator itClient;
 
 	itClient = m_clients.find( combinedIPAndPort );
 
 	if ( itClient != m_clients.end() ) {
+		// Client already exists
+		ConnectedUDPClient* client = itClient->second;
+		client->m_timeStampSecondsForLastPacketReceived = cbutil::getCurrentTimeSeconds();
 
-		/*
-		PR: Just keeping this around for example of sendto
-		int winSockSendResult = 0;
-		winSockSendResult = sendto( m_listenSocket, (char*) &newPlayerResetPacket, sizeof( newPlayerResetPacket ), 0, (sockaddr*) &client->m_clientAddress, sizeof( client->m_clientAddress ) );
+		if ( playerData.m_packetType == TYPE_Update ) {
 
-		if ( winSockSendResult == SOCKET_ERROR ) {
+			client->m_position.x = playerData.data.updated.m_xPosition;
+			client->m_position.y = playerData.data.updated.m_yPosition;
+			client->m_velocity.x = playerData.data.updated.m_xVelocity;
+			client->m_velocity.y = playerData.data.updated.m_yVelocity;
+			client->m_orientationDegrees = playerData.data.updated.m_yawDegrees;
 
-			printf( "send function call failed with error number: %d\n", WSAGetLastError() );
-		} 
-		*/
+		} else if ( playerData.m_packetType == TYPE_Acknowledge ) {
+
+			int packetIDToAck = playerData.data.acknowledged.m_packetNumber;
+			std::map<int,MidtermPacket>::iterator itAck = client->m_reliablePacketsSentButNotAcked.find( packetIDToAck );
+			if ( itAck != client->m_reliablePacketsSentButNotAcked.end() ) {
+
+				client->m_reliablePacketsSentButNotAcked.erase( itAck );
+
+			} else {
+
+				printf( "Server Warning: Ack packet received that was not registered as a reliable packet\n\n" );
+			}
+
+
+		} else if ( playerData.m_packetType == TYPE_Tagged ) {
+
+
+		} else if ( playerData.m_packetType == TYPE_Reset ) {
+
+			printf( "Server Warning: Client sent a packet type of 'Reset'. This is NOT allowed\n\n" );
+
+		} else {
+
+			printf( "Server Warning: Unrecognized packet type received from an existing client\n\n" );
+		}
+		
+	} else {
+		// New client
+		ConnectedUDPClient* client = new ConnectedUDPClient;
+		client->m_clientAddress = clientAddress;
+		client->m_userID = combinedIPAndPort;
+
+		if ( m_clients.empty() ) {
+			// Assumption: first client in is always 'it'
+			client->m_isIT = true;
+		}
+
+		printf( "A new client has connected with IP and Port: %s \n\n", combinedIPAndPort.c_str() );
+		m_clients.insert( std::pair<std::string,ConnectedUDPClient*>( combinedIPAndPort, client ) );
+
+		if ( playerData.m_packetType == TYPE_Acknowledge ) {
+
+			client->m_timeStampSecondsForLastPacketReceived = cbutil::getCurrentTimeSeconds();
+
+			++m_currentAckCount;
+
+			MidtermPacket resetPacket;
+			resetPacket.m_packetType = TYPE_Reset;
+			resetPacket.m_timestamp = cbutil::getCurrentTimeSeconds();
+			resetPacket.m_playerID = client->m_playerID;
+			resetPacket.m_packetNumber = m_currentAckCount;
+
+			resetPacket.data.reset.m_red = client->m_red;
+			resetPacket.data.reset.m_green = client->m_green;
+			resetPacket.data.reset.m_blue = client->m_blue;
+
+			unsigned char idOfPlayerWhoIsIt = getPlayerIDForPlayerWhoIsIt();
+			if ( idOfPlayerWhoIsIt == NO_PLAYER_IS_IT ) 
+			{
+				printf( "Server Warning: No player has been assigned as 'it'!\n\n" );
+			}
+			resetPacket.data.reset.m_playerIDWhoIsIt = idOfPlayerWhoIsIt;
+
+			resetPacket.data.reset.m_playerXPos = client->m_position.x;
+			resetPacket.data.reset.m_playerYPos = client->m_position.y;
+			// Note: client is expected to clear velocity
+
+			client->m_reliablePacketsSentButNotAcked.insert( std::pair<int,MidtermPacket>( resetPacket.m_packetNumber, resetPacket ) );
+
+			int winSockSendResult = 0;
+			winSockSendResult = sendto( m_listenSocket, (char*) &resetPacket, sizeof( MidtermPacket ), 0, (sockaddr*) &client->m_clientAddress, sizeof( client->m_clientAddress ) );
+
+			if ( winSockSendResult == SOCKET_ERROR ) {
+
+				printf( "reset send function call failed with error number: %d\n", WSAGetLastError() );
+			} 
+		} else {
+
+			printf( "Server Warning: A packet was received from a new client that was not allowed or expected. Only type expected is Acknowledge\n\n" );
+		}
 	}
+}
+
+
+unsigned char UDPServer::getPlayerIDForPlayerWhoIsIt() {
+
+	std::map<std::string,ConnectedUDPClient*>::iterator itClient;
+	for ( itClient = m_clients.begin(); itClient != m_clients.end(); ++itClient ) {
+
+		ConnectedUDPClient* client = itClient->second;
+		if ( client->m_isIT ) {
+
+			return client->m_playerID;
+		}
+	}
+
+	return NO_PLAYER_IS_IT;
 }
 
 
@@ -232,7 +331,48 @@ void UDPServer::sendPlayerDataToClients() {
 
 		// Push back all update packets to a vector
 		// For each client, send packets
+
+		std::vector<MidtermPacket> packetsToSend;
+		std::map<std::string,ConnectedUDPClient*>::iterator itClient;
+		for ( itClient = m_clients.begin(); itClient != m_clients.end(); ++itClient ) {
+
+			ConnectedUDPClient* client = itClient->second;
+			MidtermPacket playerDataPacket;
+
+			++m_currentAckCount;
+			playerDataPacket.m_packetType = TYPE_Update;
+			playerDataPacket.m_packetNumber = m_currentAckCount;
+			playerDataPacket.m_timestamp = cbutil::getCurrentTimeSeconds();
+			playerDataPacket.m_playerID = client->m_playerID;
+
+			playerDataPacket.data.updated.m_xPosition = client->m_position.x;
+			playerDataPacket.data.updated.m_yPosition = client->m_position.y;
+			playerDataPacket.data.updated.m_xVelocity = client->m_velocity.x;
+			playerDataPacket.data.updated.m_yVelocity = client->m_velocity.y;
+			playerDataPacket.data.updated.m_yawDegrees = client->m_orientationDegrees;
+
+			packetsToSend.push_back( playerDataPacket );
+		}
 		
+
+		std::map<std::string,ConnectedUDPClient*>::iterator itClientSend;
+		for ( itClientSend = m_clients.begin(); itClientSend != m_clients.end(); ++itClientSend ) {
+
+			ConnectedUDPClient* client = itClientSend->second;
+
+			for ( int i = 0; i < packetsToSend.size(); ++i ) {
+
+				MidtermPacket& packetToSend = packetsToSend[i];
+
+				int winSockSendResult = 0;
+				winSockSendResult = sendto( m_listenSocket, (char*) &packetsToSend, sizeof( MidtermPacket ), 0, (sockaddr*) &client->m_clientAddress, sizeof( client->m_clientAddress ) );
+
+				if ( winSockSendResult == SOCKET_ERROR ) {
+
+					printf( "reset send function call failed with error number: %d\n", WSAGetLastError() );
+				} 
+			}
+		}
 	}
 
 	lastTimeStampSeconds = currentTimeSeconds;
@@ -279,4 +419,27 @@ void UDPServer::checkForExpiredReliablePacketsWithNoAcks() {
 
 	double currentTimeSeconds = cbutil::getCurrentTimeSeconds();
 
+	std::map<std::string,ConnectedUDPClient*>::iterator itClient;
+	for ( itClient = m_clients.begin(); itClient != m_clients.end(); ++itClient ) {
+
+		ConnectedUDPClient* client = itClient->second;
+		std::map<int,MidtermPacket>::iterator itRel;
+		for ( itRel = client->m_reliablePacketsSentButNotAcked.begin(); itRel != client->m_reliablePacketsSentButNotAcked.end(); ++itRel ) {
+
+			int packetAckId = itRel->first;
+			MidtermPacket& packetNotAcked = itRel->second;
+
+			double timeStampDif = currentTimeSeconds - packetNotAcked.m_timestamp;
+			if ( timeStampDif > TIME_THRESHOLD_TO_RESEND_RELIABLE_PACKETS ) {
+
+				int winSockSendResult = 0;
+				winSockSendResult = sendto( m_listenSocket, (char*) &packetNotAcked, sizeof( MidtermPacket ), 0, (sockaddr*) &client->m_clientAddress, sizeof( client->m_clientAddress ) );
+
+				if ( winSockSendResult == SOCKET_ERROR ) {
+
+					printf( "ack resend function call failed with error number: %d\n", WSAGetLastError() );
+				} 
+			}
+		}
+	}
 }

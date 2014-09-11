@@ -11,7 +11,8 @@
 #include "Camera.hpp"
 #include "Camera2D.hpp"
 #include "GameObject.hpp"
-#include "CS6Packet.hpp"
+
+#include "MidtermPacket.hpp"
 
 
 const char PLAYER_DATA_PACKET_ID = 2;
@@ -77,6 +78,8 @@ protected:
 	// Network functions
 	void attemptToConnectToServer( float deltaSeconds );
 	void computePlayerDesiredPosition( float deltaSeconds );
+	void sendPlayerUpdateDataToServer( float deltaSeconds );
+	void collectPacketDataFromServer( float deltaSeconds );
 
 	// Initialization and Clean Up
 	void setDefaultVariableValues();
