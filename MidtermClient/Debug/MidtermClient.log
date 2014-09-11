@@ -1,15 +1,18 @@
-﻿Build started 9/11/2014 4:49:08 PM.
+﻿Build started 9/11/2014 4:55:30 PM.
      1>Project "C:\Users\AW 18\Dropbox\GuildHall\Projects\NetworkingMidterm\MidtermClient\MidtermClient.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Debug\MidtermClient.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt GameCode\FeedbackWorld.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt GameCode\FeedbackWorld.cpp GameCode\GameObject.cpp
+         GameObject.cpp
+     1>c:\users\aw 18\dropbox\guildhall\projects\networkingmidterm\midtermclient\gamecode\gameobject.cpp(84): warning C4244: 'initializing' : conversion from 'double' to 'const float', possible loss of data
          FeedbackWorld.cpp
      1>c:\users\aw 18\dropbox\guildhall\projects\networkingmidterm\midtermclient\gamecode\feedbackworld.cpp(62): warning C4018: '<' : signed/unsigned mismatch
      1>c:\users\aw 18\dropbox\guildhall\projects\networkingmidterm\midtermclient\gamecode\feedbackworld.cpp(105): warning C4018: '<' : signed/unsigned mismatch
      1>c:\users\aw 18\dropbox\guildhall\projects\networkingmidterm\midtermclient\gamecode\feedbackworld.cpp(190): warning C4018: '<' : signed/unsigned mismatch
      1>c:\users\aw 18\dropbox\guildhall\projects\networkingmidterm\midtermclient\gamecode\feedbackworld.cpp(272): warning C4018: '<' : signed/unsigned mismatch
      1>c:\users\aw 18\dropbox\guildhall\projects\networkingmidterm\midtermclient\gamecode\feedbackworld.cpp(325): warning C4018: '<' : signed/unsigned mismatch
+         Generating Code...
          All outputs are up-to-date.
        ManifestResourceCompile:
          All outputs are up-to-date.
@@ -126,4 +129,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.74
+Time Elapsed 00:00:02.25
