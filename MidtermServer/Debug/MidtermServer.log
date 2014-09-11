@@ -1,4 +1,4 @@
-﻿Build started 9/11/2014 3:13:21 PM.
+﻿Build started 9/11/2014 3:46:19 PM.
      1>Project "C:\Users\AW 18\Dropbox\GuildHall\Projects\NetworkingMidterm\MidtermServer\MidtermServer.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Debug\MidtermServer.unsuccessfulbuild" because "AlwaysCreate" was specified.
@@ -8,7 +8,7 @@
      1>c:\users\aw 18\dropbox\guildhall\projects\networkingmidterm\midtermserver\servercode\udpserver.cpp(36): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
      1>c:\users\aw 18\dropbox\guildhall\projects\networkingmidterm\midtermserver\servercode\udpserver.cpp(152): warning C4996: 'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _itoa. See online help for details.
                  c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdlib.h(867) : see declaration of 'itoa'
-     1>c:\users\aw 18\dropbox\guildhall\projects\networkingmidterm\midtermserver\servercode\udpserver.cpp(362): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\aw 18\dropbox\guildhall\projects\networkingmidterm\midtermserver\servercode\udpserver.cpp(369): warning C4018: '<' : signed/unsigned mismatch
          All outputs are up-to-date.
        ManifestResourceCompile:
          All outputs are up-to-date.
@@ -123,4 +123,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.92
+Time Elapsed 00:00:01.94

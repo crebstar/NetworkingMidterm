@@ -229,6 +229,9 @@ void UDPServer::updateOrCreateNewClient( const std::string& combinedIPAndPort, c
 			resetPacket.m_timestamp = cbutil::getCurrentTimeSeconds();
 			resetPacket.m_playerID = client->m_playerID;
 			resetPacket.m_packetNumber = m_currentAckCount;
+			resetPacket.m_red = client->m_red;
+			resetPacket.m_green = client->m_green;
+			resetPacket.m_blue = client->m_blue;
 
 			resetPacket.data.reset.m_red = client->m_red;
 			resetPacket.data.reset.m_green = client->m_green;
@@ -344,6 +347,9 @@ void UDPServer::sendPlayerDataToClients() {
 			playerDataPacket.m_packetNumber = m_currentAckCount;
 			playerDataPacket.m_timestamp = cbutil::getCurrentTimeSeconds();
 			playerDataPacket.m_playerID = client->m_playerID;
+			playerDataPacket.m_red = client->m_red;
+			playerDataPacket.m_green = client->m_green;
+			playerDataPacket.m_blue = client->m_blue;
 
 			playerDataPacket.data.updated.m_xPosition = client->m_position.x;
 			playerDataPacket.data.updated.m_yPosition = client->m_position.y;
