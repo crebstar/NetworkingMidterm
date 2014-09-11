@@ -1,6 +1,6 @@
 Author: Paul Renton
 
-HOW TO USE FEEDBACK PROGRAM (Networking Assignment Two)
+HOW TO USE MIDTERM SERVER PROGRAM (Networking Assignment Two)
 
 The program accepts four command line arguments
 
