@@ -62,6 +62,7 @@ void FeedbackWorld::update( float deltaSeconds ) {
 		for ( int i = 0; i < m_otherPlayers.size(); ++i ) {
 
 			GameObject* otherPlayer = m_otherPlayers[i];
+			otherPlayer->update( deltaSeconds );
 		}
 
 
@@ -147,6 +148,29 @@ void FeedbackWorld::collectPacketDataFromServer( float deltaSeconds ) {
 
 								gamePlayerRecPacket->m_updateProcessedForFrame = true;
 							}
+
+						} else if ( packetRec.m_packetType == TYPE_Reset ) {
+
+							gamePlayerRecPacket->m_position.x = packetRec.data.reset.m_playerXPos;
+							gamePlayerRecPacket->m_position.y = packetRec.data.reset.m_playerYPos;
+
+							if ( gamePlayerRecPacket->m_playerID == packetRec.data.reset.m_playerIDWhoIsIt ) {
+
+								gamePlayerRecPacket->m_isIt = true;
+
+							} else {
+
+								gamePlayerRecPacket->m_isIt = false;
+							}
+
+							MidtermPacket ackPacketForReset;
+							ackPacketForReset.m_packetType = TYPE_Acknowledge;
+							ackPacketForReset.m_playerID = gamePlayerRecPacket->m_playerID;
+							ackPacketForReset.m_packetNumber = packetRec.m_packetNumber;
+							ackPacketForReset.data.acknowledged.m_packetNumber = packetRec.m_packetNumber;
+							ackPacketForReset.data.acknowledged.m_packetType = packetRec.m_packetType;
+
+							nwAgent->sendPlayerDataPacketToServer( ackPacketForReset );
 						}
 
 						orderedPacketSet.erase( itPack );

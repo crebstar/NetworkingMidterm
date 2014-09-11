@@ -46,8 +46,8 @@ void GameObject::updateDesiredPosition( float deltaSeconds ) {
 
 	if ( m_isIt ) {
 
-		m_currentVelocity.x = m_currentVelocity.x * MAX_VELOCITY_PER_SECOND * 1.10f;
-		m_currentVelocity.y = m_currentVelocity.y * MAX_VELOCITY_PER_SECOND * 1.10f;
+		m_currentVelocity.x = m_currentVelocity.x * MAX_VELOCITY_PER_SECOND * 1.25f;
+		m_currentVelocity.y = m_currentVelocity.y * MAX_VELOCITY_PER_SECOND * 1.25f;
 
 	} else {
 

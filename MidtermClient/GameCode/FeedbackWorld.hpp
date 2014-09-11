@@ -82,6 +82,8 @@ protected:
 	void collectPacketDataFromServer( float deltaSeconds );
 	void resetPlayerCache();
 
+	void checkForCollisionWithIT( float deltaSeconds );
+
 	// Initialization and Clean Up
 	void setDefaultVariableValues();
 	void freeMemoryOfOwnedObjectsAndCleanUp();

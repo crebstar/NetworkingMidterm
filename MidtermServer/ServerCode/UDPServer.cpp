@@ -194,6 +194,7 @@ void UDPServer::updateOrCreateNewClient( const std::string& combinedIPAndPort, c
 
 		} else if ( playerData.m_packetType == TYPE_Tagged ) {
 
+			sendResetPacketsToClientsAsUserWasTagged( playerData );
 
 		} else if ( playerData.m_packetType == TYPE_Reset ) {
 
@@ -242,6 +243,7 @@ void UDPServer::updateOrCreateNewClient( const std::string& combinedIPAndPort, c
 			{
 				printf( "Server Warning: No player has been assigned as 'it'!\n\n" );
 			}
+
 			resetPacket.data.reset.m_playerIDWhoIsIt = idOfPlayerWhoIsIt;
 
 			resetPacket.data.reset.m_playerXPos = client->m_position.x;
@@ -261,6 +263,52 @@ void UDPServer::updateOrCreateNewClient( const std::string& combinedIPAndPort, c
 
 			printf( "Server Warning: A packet was received from a new client that was not allowed or expected. Only type expected is Acknowledge\n\n" );
 		}
+	}
+}
+
+
+void UDPServer::sendResetPacketsToClientsAsUserWasTagged( const MidtermPacket& packetRec ) {
+
+
+	int clientWhoIsIt = packetRec.data.tagged.m_playerIDWhoWasTagged;
+
+	printf( "Game has ended. Starting a new game with a new client as IT" );
+
+	std::map<std::string,ConnectedUDPClient*>::iterator itClient;
+	for ( itClient = m_clients.begin(); itClient != m_clients.end(); ++itClient ) {
+
+		ConnectedUDPClient* client = itClient->second;
+
+		if ( client->m_playerID == clientWhoIsIt ) {
+
+			client->m_isIT = true;
+
+		} else {
+
+			client->m_isIT = false;
+		}
+
+		++m_currentAckCount;
+
+		MidtermPacket resetPacketToSend;
+		resetPacketToSend.m_packetType = TYPE_Reset;
+		resetPacketToSend.m_timestamp = cbutil::getCurrentTimeSeconds();
+		resetPacketToSend.m_playerID = client->m_playerID;
+		resetPacketToSend.m_packetNumber = m_currentAckCount;
+	
+		resetPacketToSend.data.reset.m_playerXPos = client->m_startingPos.x;
+		resetPacketToSend.data.reset.m_playerYPos = client->m_startingPos.y;
+		resetPacketToSend.data.reset.m_playerIDWhoIsIt = clientWhoIsIt;
+
+		client->m_reliablePacketsSentButNotAcked.insert( std::pair<int,MidtermPacket>( resetPacketToSend.m_packetNumber, resetPacketToSend ) );
+
+		int winSockSendResult = 0;
+		winSockSendResult = sendto( m_listenSocket, (char*) &resetPacketToSend, sizeof( MidtermPacket ), 0, (sockaddr*) &client->m_clientAddress, sizeof( client->m_clientAddress ) );
+
+		if ( winSockSendResult == SOCKET_ERROR ) {
+
+			printf( "reset send function call failed with error number: %d\n", WSAGetLastError() );
+		} 
 	}
 }
 

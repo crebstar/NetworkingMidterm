@@ -66,6 +66,7 @@ private:
 	void updateOrCreateNewClient( const std::string& combinedIPAndPort, const sockaddr_in& clientAddress, const MidtermPacket& playerData );
 	void checkForExpiredClients();
 	void displayConnectedUsers();
+	void sendResetPacketsToClientsAsUserWasTagged( const MidtermPacket& packetRec );
 
 	void sendPlayerDataToClients();
 
